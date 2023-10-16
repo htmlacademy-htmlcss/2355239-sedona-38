@@ -2,10 +2,13 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>Sedona — город в Аризоне</title>
+        <title>Гостиницы Седоны</title>
         <link rel="icon" href="#">
     </head>
     <body>
+
+        <!--page-header-->
+
         <header class="page-header">
             <nav class="navigation">
               <a class="navigation-logo" href="index.html">
@@ -39,25 +42,41 @@
               <button class="hotel-search-cta" type="button">Хочу сюда!</button>
             </nav>
         </header>
+
+        <!--main-->
+
         <main class="main-catalog">
             <div class="header-content">
+
+                <!--inner-header-->
+
                 <header class="inner-header">
                     <h1 class="inner-header-title">Гостиницы Седоны</h1>
-                    <ul class="breadcrumbs">
-                        <li class="breadcrumbs-item">
-                            <a class="breadcrumbs-link" href="index.html">
-                                <img class="breadcrumbs-icon" src="#" alt="Иконка домика">
-                                <span class="visually-hidden">Домашняя страница</span>
-                            </a>
-                            <img class="breadcrumbs-arrow" src="#" alt="Стрелка вправо">
-                        </li>
-                        <li class="breadcrumbs-item">
-                            <a class="breadcrumbs-link breadcrumbs-link-current" href="catalog.html">Гостиницы</a>
-                        </li>
-                    </ul>
+                    <nav class="inner-navigation">
+                        <ul class="breadcrumbs">
+                            <li class="breadcrumbs-item">
+                                <a class="breadcrumbs-link" href="index.html">
+                                    <img class="breadcrumbs-icon" src="#" alt="Иконка домика">
+                                    <span class="visually-hidden">Домашняя страница</span>
+                                </a>
+                            </li>
+                            <li>
+                                <img class="breadcrumbs-arrow" src="#" alt="Стрелка вправо">
+                            </li>
+                            <li class="breadcrumbs-item">
+                                <a class="breadcrumbs-link breadcrumbs-link-current" href="catalog.html">Гостиницы</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </header>
-                <h2 class="visually-hidden">Фильтр гостиниц</h2>
+
+                <!--filters-->
+
+                <h2 class="visually-hidden">Фильтр</h2>
                 <form class="catalog-filter" action="#" method="get">
+
+                    <!--filter-infrastructure--->
+
                     <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-title">Инфраструктура:</legend>
                         <ul class="catalog-filter-list">
@@ -81,13 +100,16 @@
                             </li>
                         </ul>
                     </fieldset>
+
+                    <!--filter-type--->
+
                     <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-title">Тип Жилья:</legend>
                         <ul class="catalog-filter-list">
                             <li class="catalog-filter-item">
                                 <label class="control">
-                                    <input class="control-input" type="radio" value="hotel" name="housing-type">
-                                    Отель
+                                    <input class="control-input" type="radio" value="hotel" name="housing-type" checked>
+                                    Гостиница
                                 </label>
                             </li>
                             <li class="catalog-filter-item">
@@ -104,23 +126,79 @@
                             </li>
                         </ul>
                     </fieldset>
+
+                    <!--filter-cost--->
+
                     <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                         <label class="input-field-wrap" for="min-cost-field">
-                            <input class="control-input" type="number" name="min-cost-field" id="min-cost-field" value="0" step="100" min="0">
                             от
+                            <input class="control-input" type="number" name="min-cost-field" id="min-cost-field" value="0" step="100" min="0">
                         </label>
                         <label class="input-field-wrap" for="max-cost-field"></label>
-                            <input class="control-input" type="number" name="max-cost-field" id="max-cost-field" value="9000" step="100" max="12000">
                             до
+                            <input class="control-input" type="number" name="max-cost-field" id="max-cost-field" value="9000" step="100" max="12000">
                         </label>
-                        <input class="control-input" type="range" name="range-cost" value="9000" step="100" min="0" max="12000">
+                        <input class="control-input" type="range" name="cost-slider" value="0" step="100" min="0" max="12000">
+                        <input class="control-input" type="range" name="cost-slider" value="9000" step="100" min="0" max="12000">
                     </fieldset>
+
+                    <!--filter-submit--->
+
                     <button type="submit">Применить</button>
                     <button type="button">Сбросить</button>
                 </form>
             </div>
+
+            <!--catalog--->
+
+            <section class="catalog">
+
+                <!--catalog-settings--->
+
+                <div class="catalog-settings">
+                    <h2 class="visually-hidden">Каталог</h2>
+                    <p class="catalog-counter">Найдено гостиниц: 38</p>
+                    <div class="catalog-sort">
+                        <h3 class="visually-hidden">Настройки отображения каталога</h3>
+                        <select class="catalog-sort" name="catalog-sort-select" id="catalog-sort-select">
+                            <option value="cheap-to-expensive">Сначала дешевые</option>
+                            <option value="expensive-to-cheap">Сначала дорогие</option>
+                        </select>
+                        <ul class="catalog-view-list">
+                            <li class="catalog-view-item">
+                                <a class="catalog-view-link catalog-view-link-current" href="#">
+                                    <span class="visually-hidden">Отображение в виде сетки</span>
+                                    <img src="#" alt="Иконка вида сетки">
+                                </a>
+                            </li>
+                            <li class="catalog-view-item">
+                                <a class="catalog-view-link" href="#">
+                                    <span class="visually-hidden">Отображение в виде крупных превью</span>
+                                    <img src="#" alt="Иконка вида крупного превью">
+                                </a>
+                            </li>
+                            <li class="catalog-view-item">
+                                <a class="catalog-view-link" href="#">
+                                    <span class="visually-hidden">Отображение в виде списка</span>
+                                    <img src="#" alt="Иконка вида списка">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--catalog-listing--->
+
+                    <h3 class="visually-hidden">Список гостиниц</h3>
+
+                    <!--catalog-pagination--->
+
+                    <h3 class="visually-hidden">Список страниц</h3>
+                </div>
+            </section>
         </main>
+
+        <!--page-footer-->
 
         <footer class="page-footer">
             <h2 class="visually-hidden">Контакты разработчика</h2>

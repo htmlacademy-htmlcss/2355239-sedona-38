@@ -1,16 +1,16 @@
 @font-face {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -20,7 +20,7 @@
 
 
 .heading-1 {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 60px;
   font-style: normal;
   font-weight: 700;
@@ -28,7 +28,7 @@
 }
 
 .heading-2 {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -37,7 +37,7 @@
 }
 
 .heading-3 {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -46,7 +46,7 @@
 }
 
 .heading-3 {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -54,7 +54,7 @@
 }
 
 .heading-4 {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -68,7 +68,7 @@
 
 
 .button-big {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -77,7 +77,7 @@
 }
 
 .button-small {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -86,7 +86,7 @@
 }
 
 .button-like-normal {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -95,7 +95,7 @@
 }
 
 .button-like-nonecase {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -108,7 +108,7 @@
 
 
 .text-phone {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -117,7 +117,7 @@
 }
 
 .text-blocks {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -125,7 +125,7 @@
 }
 
 .text-small {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -133,7 +133,7 @@
 }
 
 .text-basic {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -141,7 +141,7 @@
 }
 
 .text-input {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

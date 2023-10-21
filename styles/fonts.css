@@ -13,3 +13,137 @@
   src: url("../fonts/ptsans-700.woff2");
   font-display: swap;
 }
+
+
+
+/* headings */
+
+
+.heading-1 {
+  font-family: PT Sans;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 78px; /* 130% */
+}
+
+.heading-2 {
+  font-family: PT Sans;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 120% */
+  text-transform: uppercase;
+}
+
+.heading-3 {
+  font-family: PT Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 116.667% */
+  text-transform: uppercase;
+}
+
+.heading-3 {
+  font-family: PT Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 116.667% */
+}
+
+.heading-4 {
+  font-family: PT Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+  text-transform: capitalize;
+}
+
+
+
+/* buttons */
+
+
+.button-big {
+  font-family: PT Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 180% */
+  text-transform: uppercase;
+}
+
+.button-small {
+  font-family: PT Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  text-transform: uppercase;
+}
+
+.button-like-normal {
+  font-family: PT Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  text-transform: uppercase;
+}
+
+.button-like-nonecase {
+  font-family: PT Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+}
+
+
+
+/* text */
+
+
+.text-phone {
+  font-family: PT Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+  text-transform: uppercase;
+}
+
+.text-blocks {
+  font-family: PT Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 116.667% */
+}
+
+.text-small {
+  font-family: PT Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 131.25% */
+}
+
+.text-basic {
+  font-family: PT Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 118.182% */
+}
+
+.text-input {
+  font-family: PT Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+}

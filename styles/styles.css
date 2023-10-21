@@ -14,6 +14,18 @@ body {
 }
 
 
+
+/* hero */
+
+.hero {
+  width: 100%;
+  height: 484px;
+  background-image: url(../images/background/hero-image.jpg);
+  background-size: cover;
+}
+
+
+
 /* Advantages */
 
 .advantages-list-image {
@@ -21,12 +33,6 @@ body {
   display: block;
 }
 
-.welcome {
-  width: 100%;
-  height: 484px;
-  background-image: url(../images/background/hero-image.jpg);
-  background-size: cover;
-}
 
 
 /* subscribe */

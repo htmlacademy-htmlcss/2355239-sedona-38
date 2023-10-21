@@ -32,17 +32,21 @@
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">
               <span class="visually-hidden">Поиск</span>
-              <img src="#" alt="Иконка поиска">
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#search"></use>
+              </svg>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
-              <img src="#" alt="Иконка избранного">
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#favorite"></use>
+              </svg>
             </a>
           </li>
           <li class="navigation-item">
-            <button type="button">Хочу сюда!</button>
+            <button class="button-brown" type="button">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
@@ -61,12 +65,16 @@
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
-                  <img class="breadcrumbs-icon" src="#" alt="Иконка домика">
+                  <svg class="icon breadcrumbs-icon">
+                    <use xlink:href="./images/sprite.svg#home-small"></use>
+                  </svg>
                   <span class="visually-hidden">Домашняя страница</span>
                 </a>
               </li>
               <li>
-                <img class="breadcrumbs-arrow" src="#" alt="Стрелка вправо">
+                <svg class="icon breadcrumbs-arrow">
+                  <use xlink:href="./images/sprite.svg#arrow"></use>
+                </svg>
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link breadcrumbs-link-current" href="catalog.html">Гостиницы</a>
@@ -149,10 +157,12 @@
               <input class="control-input" type="range" name="cost-slider" value="9000" step="100" min="0" max="12000">
             </fieldset>
 
-            <!--filter-submit-->
+            <!--filter-controls-->
 
-            <button type="submit">Применить</button>
-            <button type="button">Сбросить</button>
+            <div class="filter-form-controls">
+              <button class="button-blue" type="submit">Применить</button>
+              <button class="button-transparent" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
       </section>
@@ -170,20 +180,26 @@
           <ul class="catalog-view-list">
             <li class="catalog-view-item">
               <a class="catalog-view-link catalog-view-link-current" href="#">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#page-view-grid"></use>
+                </svg>
                 <span class="visually-hidden">Отображение в виде сетки</span>
-                <img src="#" alt="Иконка вида сетки">
               </a>
             </li>
             <li class="catalog-view-item">
               <a class="catalog-view-link" href="#">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#page-view-card"></use>
+                </svg>
                 <span class="visually-hidden">Отображение в виде крупных превью</span>
-                <img src="#" alt="Иконка вида крупного превью">
               </a>
             </li>
             <li class="catalog-view-item">
               <a class="catalog-view-link" href="#">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#page-view-list"></use>
+                </svg>
                 <span class="visually-hidden">Отображение в виде списка</span>
-                <img src="#" alt="Иконка вида списка">
               </a>
             </li>
           </ul>
@@ -202,19 +218,40 @@
               <p class="product-type">Гостиница</p>
               <p class="product-cost">От 4000&#8201;₽</p>
             </div>
-            <section class="product-item-actions">
+            <div class="product-item-actions">
               <a class="product-item-actions-details" href="#">Подробнее</a>
-              <button class="product-item-actions-favorites" type="button">В избранное</button>
-            </section>
-            <section class="rating">
-              <div class="rating-star-set">
-                <img class="rating-star" src="#" alt="Иконка звезды">
-                <img class="rating-star" src="#" alt="Иконка звезды">
-                <img class="rating-star" src="#" alt="Иконка звезды">
-                <img class="rating-star" src="#" alt="Иконка звезды">
-              </div>
+              <button class="button-blue" type="button">В избранное</button>
+            </div>
+            <div class="rating">
+              <ul class="rating-star-list">
+                <li class="rating-star active">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </li>
+                <li class="rating-star active">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </li>
+                <li class="rating-star active">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </li>
+                <li class="rating-star active">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </li>
+                <li class="rating-star not-active">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </li>
+              </ul>
               <p class="rating-value">Рейтинг: 8,5</p>
-            </section>
+            </div>
           </li>
           <li class="product-item">
             <img class="product-item-image" src="#" alt="Изображение гостиницы">
@@ -223,19 +260,40 @@
               <p class="product-type">Гостиница</p>
               <p class="product-cost">От 5000&#8201;₽</p>
             </div>
-            <section class="product-item-actions">
+            <div class="product-item-actions">
               <a class="product-item-actions-details" href="#">Подробнее</a>
-              <button class="product-item-actions-favorites product-item-actions-favorites-true" type="button">В избранное</button>
-            </section>
-            <section class="rating">
-              <div class="rating-star-set">
-                <img class="rating-star" src="#" alt="Иконка звезды">
-                <img class="rating-star" src="#" alt="Иконка звезды">
-                <img class="rating-star" src="#" alt="Иконка звезды">
-                <img class="rating-star" src="#" alt="Иконка звезды">
-              </div>
+              <button class="button-green" type="button">В избранном</button>
+            </div>
+            <div class="rating">
+              <ul class="rating-star-list">
+                <li class="rating-star active">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </li>
+                <li class="rating-star active">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </li>
+                <li class="rating-star active">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </li>
+                <li class="rating-star active">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </li>
+                <li class="rating-star not-active">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </li>
+              </ul>
               <p class="rating-value">Рейтинг: 9,2</p>
-            </section>
+            </div>
           </li>
           <li class="product-item">
             <img class="product-item-image" src="#" alt="Изображение гостиницы">
@@ -244,19 +302,40 @@
               <p class="product-type">Гостиница</p>
               <p class="product-cost">От 2500&#8201;₽</p>
             </div>
-            <section class="product-item-actions">
+            <div class="product-item-actions">
               <a class="product-item-actions-details" href="#">Подробнее</a>
-              <button class="product-item-actions-favorites" type="button">В избранное</button>
-            </section>
-            <section class="rating">
-              <div class="rating-star-set">
-                <img class="rating-star" src="#" alt="Иконка звезды">
-                <img class="rating-star" src="#" alt="Иконка звезды">
-                <img class="rating-star" src="#" alt="Иконка звезды">
-                <img class="rating-star" src="#" alt="Иконка звезды">
-              </div>
+              <button class="button-blue" type="button">В избранное</button>
+            </div>
+            <div class="rating">
+              <ul class="rating-star-list">
+                <li class="rating-star active">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </li>
+                <li class="rating-star active">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </li>
+                <li class="rating-star active">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </li>
+                <li class="rating-star not-active">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </li>
+                <li class="rating-star not-active">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </li>
+              </ul>
               <p class="rating-value">Рейтинг: 6,9</p>
-            </section>
+            </div>
           </li>
           <li class="product-item">
             <img class="product-item-image" src="#" alt="Изображение гостиницы">
@@ -265,19 +344,40 @@
               <p class="product-type">Гостиница</p>
               <p class="product-cost">От 1500&#8201;₽</p>
             </div>
-            <section class="product-item-actions">
+            <div class="product-item-actions">
               <a class="product-item-actions-details" href="#">Подробнее</a>
-              <button class="product-item-actions-favorites" type="button">В избранное</button>
-            </section>
-            <section class="rating">
-              <div class="rating-star-set">
-                <img class="rating-star" src="#" alt="Иконка звезды">
-                <img class="rating-star" src="#" alt="Иконка звезды">
-                <img class="rating-star" src="#" alt="Иконка звезды">
-                <img class="rating-star" src="#" alt="Иконка звезды">
-              </div>
+              <button class="button-blue" type="button">В избранное</button>
+            </div>
+            <div class="rating">
+              <ul class="rating-star-list">
+                <li class="rating-star active">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </li>
+                <li class="rating-star active">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </li>
+                <li class="rating-star not-active">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </li>
+                <li class="rating-star not-active">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </li>
+                <li class="rating-star not-active">
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#star"></use>
+                  </svg>
+                </li>
+              </ul>
               <p class="rating-value">Рейтинг: 5,0</p>
-            </section>
+            </div>
           </li>
         </ul>
       </section>
@@ -324,30 +424,37 @@
     <!--page-footer-->
 
     <footer class="page-footer">
-      <h2 class="visually-hidden">Контакты разработчика</h2>
-      <h3 class="visually-hidden">Социальные сети</h3>
       <ul class="social-list">
         <li class="social-item">
           <a class="social-button" href="https://vk.com/htmlacademy" target="_blank">
+            <svg class="icon">
+              <use xlink:href="./images/sprite.svg#social-vk"></use>
+            </svg>
             <span class="visually-hidden">VK</span>
           </a>
         </li>
         <li class="social-item">
           <a class="social-button" href="https://t.me/htmlacademy" target="_blank">
+            <svg class="icon">
+              <use xlink:href="./images/sprite.svg#social-telegram"></use>
+            </svg>
             <span class="visually-hidden">Telegram</span>
           </a>
         </li>
         <li class="social-item">
           <a class="social-button" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+            <svg class="icon">
+              <use xlink:href="./images/sprite.svg#social-youtube"></use>
+            </svg>
             <span class="visually-hidden">YouTube</span>
           </a>
         </li>
       </ul>
-      <h3 class="visually-hidden">Телефон</h3>
       <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <h3 class="visually-hidden">Сайт разработчика</h3>
       <a class="footer-logo" href="https://htmlacademy.ru/" target="_blank">
-        <img class="company-logo" src="#" alt="Логотип HTML Academy">
+        <svg class="icon">
+          <use xlink:href="./images/sprite.svg#htmlacademy-logo"></use>
+        </svg>
       </a>
     </footer>
   </body>

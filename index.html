@@ -6,9 +6,13 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/colors.css">
-    <link rel="stylesheet" href="styles/typography.css">
+    <link rel="stylesheet" href="styles/fonts.css">
   </head>
   <body>
+
+    <svg class="icon">
+      <use xlink:href="images/sprite.svg#burger"></use>
+    </svg>
 
     <!--Page-header-->
 
@@ -32,17 +36,21 @@
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">
               <span class="visually-hidden">Поиск</span>
-              <img src="#" alt="Иконка поиска">
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#search"></use>
+              </svg>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
-              <img src="#" alt="Иконка избранного">
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#favorite"></use>
+              </svg>
             </a>
           </li>
           <li>
-            <button type="button">Хочу сюда!</button>
+            <button class="button-brown" type="button">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
@@ -56,8 +64,8 @@
 
       <section class="welcome">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-        <img class="welcome-image" src="#" alt=" Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!>
-        <img class="wlcome-decorative-image" src="#" alt="Декоративное изображение">
+        <img class="welcome-image" src="#" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
+        <img class="welcome-decorative-image" src="#" alt="Декоративное изображение">
       </section>
 
       <!--advantages-->
@@ -126,21 +134,27 @@
         <ul class="advantages-list">
           <li class="advantages-item">
             <section class="advantages-item-wrapper ligh-grey">
-              <img class="advantages-item-icon" src="#" alt="Домик">
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#home"></use>
+              </svg>
               <h3 class="secondary-title-uppercase">Жильё</h3>
               <p class="secondary-subtitle">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </section>
           </li>
           <li class="advantages-item">
             <section class="advantages-item-wrapper white">
-              <img class="advantages-item-icon" src="#" alt="Бургер">
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#burger"></use>
+              </svg>
               <h3 class="secondary-title-uppercase">Еда</h3>
               <p class="secondary-subtitle">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </section>
           </li>
           <li class="advantages-item">
             <section class="advantages-item-wrapper ligh-grey">
-              <img class="advantages-item-icon" src="#" alt="Коробка с подарком">
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#present"></use>
+              </svg>
               <h3 class="secondary-title-uppercase">Сувениры</h3>
               <p class="secondary-subtitle">Не только китайского, но и настоящего местного производства!</p>
             </section>
@@ -154,7 +168,7 @@
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p class="primary-title">Заинтересовались?</p>
         <p class="primary-subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button type="button">Поиск гостиницы в седоне</button>
+        <button class="button-brown" type="button">Поиск гостиницы в седоне</button>
       </section>
 
       <!--subscribe-->
@@ -164,7 +178,7 @@
         <p class="primary-subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="subscribe-email-field" type="email" id="user-email">
-          <button type="submit">Подписаться</button>
+          <butto class="button-blue"n type="submit">Подписаться</button>
         </form>
       </article>
     </main>
@@ -172,33 +186,37 @@
     <!--page-footer-->
 
     <footer class="page-footer">
-      <h2 class="visually-hidden">Контакты разработчика</h2>
-      <h3 class="visually-hidden">Социальные сети</h3>
       <ul class="social-list">
         <li class="social-item">
           <a class="social-button" href="https://vk.com/htmlacademy" target="_blank">
-            <img class="social-icon" src="#" alt="Иконка VK">
-            <span class="visually-hidden">Ссылка на VK</span>
+            <svg class="icon">
+              <use xlink:href="./images/sprite.svg#social-vk"></use>
+            </svg>
+            <span class="visually-hidden">VK</span>
           </a>
         </li>
         <li class="social-item">
           <a class="social-button" href="https://t.me/htmlacademy" target="_blank">
-            <img class="social-icon" src="#" alt="Иконка Telegram">
-            <span class="visually-hidden">Ссылка на Telegram</span>
+            <svg class="icon">
+              <use xlink:href="./images/sprite.svg#social-telegram"></use>
+            </svg>
+            <span class="visually-hidden">Telegram</span>
           </a>
         </li>
         <li class="social-item">
           <a class="social-button" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
-            <img class="social-icon" src="#" alt="Иконка YouTube">
-            <span class="visually-hidden">Ссылка на YouTube</span>
+            <svg class="icon">
+              <use xlink:href="./images/sprite.svg#social-youtube"></use>
+            </svg>
+            <span class="visually-hidden">YouTube</span>
           </a>
         </li>
       </ul>
-      <h3 class="visually-hidden">Телефон</h3>
       <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <h3 class="visually-hidden">Сайт разработчика</h3>
       <a class="footer-logo" href="https://htmlacademy.ru/" target="_blank">
-        <img class="company-logo" src="#" alt="Логотип HTML Academy">
+        <svg class="icon">
+          <use xlink:href="./images/sprite.svg#htmlacademy-logo"></use>
+        </svg>
       </a>
     </footer>
   </body>

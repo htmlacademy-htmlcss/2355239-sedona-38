@@ -1,16 +1,16 @@
 :root{
   --texts-texts-basic:rgb(0 0 0);
   --texts-second:rgb(51 51 51);
-  --texts-background-deafault:rgb(255 255 255);
+  --texts-background-default:rgb(255 255 255);
   --texts-background-small:rgb(255 255 255 / 0.3);
   --texts-error:rgb(255 87 87);
   --buttons-basic:rgb(117 97 87);
   --buttons-second:rgb(130 179 211);
   --buttons-select:rgb(125 181 79);
-  --white:rgb(0 0 0 / 0.3);
+  --background-basic-2:rgb(255 255 255);
+  --background-basic-3:rgb(130 179 211);
   --background-second-1:rgb(131 179 211 / 0.12);
   --background-second-2:rgb(131 179 211 / 0.2);
-  --background-basic-3:rgb(130 179 211);
   --icons-basic:rgb(0 0 0);
   --icons-second:rgb(131 179 211);
   --icons-text:rgb(125 181 79);

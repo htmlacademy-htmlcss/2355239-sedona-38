@@ -1,12 +1,37 @@
 body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: var(--texts-texts-basic);
   background-color: var(--forms-elements-2);
   margin: 0;
 }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Раскомментировать когда вся графика будет отображаться
+.visually-hidden {
+  visibility: hidden;
+}
+*/
 
 .page-content-container {
   background-color: var(--background-basic-2);
   width: 1200px;
   height: auto;
+  margin: auto;
+  box-shadow: rgb(0 0 0 / 0.2) 0 0 15px 0;
 }
 
 .icon {
@@ -17,25 +42,28 @@ body {
 
 /* hero */
 
+
 .hero {
   width: 100%;
-  height: 484px;
+  height: auto;
   background-image: url(../images/background/hero-image.jpg);
   background-size: cover;
 }
 
 
 
-/* Advantages */
+/* advantages */
+
 
 .advantages-list-image {
+  height: 384px;
   object-fit: cover;
-  display: block;
 }
 
 
 
 /* subscribe */
+
 
 .subscribe {
   width: 100%;
@@ -45,7 +73,9 @@ body {
 }
 
 
+
 /* inner-header */
+
 
 .inner-header {
   width: 100%;

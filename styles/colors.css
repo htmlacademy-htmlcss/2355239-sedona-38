@@ -1,19 +1,53 @@
 :root{
+
+  /* texts */
+
   --texts-texts-basic:rgb(0 0 0);
+  --texts-hover:rgb(117 97 87);
+  --texts-focus:rgb(117 97 87);
+  --texts-active:rgb(117 97 87 / 0.3);
+
   --texts-second:rgb(51 51 51);
   --texts-background-default:rgb(255 255 255);
   --texts-background-small:rgb(255 255 255 / 0.3);
   --texts-error:rgb(255 87 87);
+
+  /* buttons */
+
   --buttons-basic:rgb(117 97 87);
+  --buttons-brown-hover: rgb(97 80 72);
+
   --buttons-second:rgb(130 179 211);
+  --buttons-blue-hover:rgb(104 162 202);
+
   --buttons-select:rgb(125 181 79);
+  --buttons-green-hover:rgba(108 158 66);
+
+  --buttons-disabled: rgb(229 229 229);
+
+
+
   --background-basic-2:rgb(255 255 255);
   --background-basic-3:rgb(130 179 211);
   --background-second-1:rgb(131 179 211 / 0.12);
   --background-second-2:rgb(131 179 211 / 0.2);
+
+  /* icons */
+
   --icons-basic:rgb(0 0 0);
+  --icons-hover:rgb(117 97 87);
+  --icons-focus:rgb(117 97 87);
+  --icons-active:rgb(117 97 87 / 0.3);
+
   --icons-second:rgb(131 179 211);
+  --icons-second-hover:rgb(104 162 202);
+  --icons-second-focus:rgb(104 162 202);
+  --icons-second-active:rgb(104 162 202);
+
   --icons-text:rgb(125 181 79);
+
+  /* forms */
+
   --forms-inputs:rgb(63 94 114);
   --forms-elements-1:rgb(229 229 229);
   --forms-elements-2:rgb(242 242 242);

@@ -1,17 +1,25 @@
 body {
   font-family: "PT Sans", "Arial", sans-serif;
-  color: var(--texts-texts-basic);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
   background-color: var(--forms-elements-2);
   margin: 0;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
-}
-
-a {
-  text-decoration: none;
+  margin: 0;
 }
 
 img {
@@ -20,11 +28,13 @@ img {
   object-fit: contain;
 }
 
-/* Раскомментировать когда вся графика будет отображаться
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
-*/
 
 .page-content-container {
   background-color: var(--background-basic-2);
@@ -40,7 +50,153 @@ img {
 
 
 
+/* buttons */
+
+
+/* button brown */
+
+.button-brown {
+  background-color: var(--buttons-basic);
+  border: 0;
+  border-radius: 4px;
+  color: var(--background-basic-2);
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  text-transform: uppercase;
+}
+
+.button-brown:hover {
+  background-color: var(--buttons-brown-hover);
+  cursor: pointer;
+}
+
+.button-brown:focus {
+  background-color: var(--buttons-brown-hover);
+}
+
+.button-brown:active {
+  background-color: var(--buttons-basic);
+  color: var(--texts-background-small);
+}
+
+/* button blue */
+
+.button-blue {
+  background-color: var(--buttons-second);
+  border: 0;
+  border-radius: 4px;
+  color: var(--background-basic-2);
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  text-transform: uppercase;
+}
+
+.button-blue:hover {
+  background-color: var(--buttons-blue-hover);
+  cursor: pointer;
+}
+
+.button-blue:focus {
+  background-color: var(--buttons-blue-hover);
+}
+
+.button-blue:active {
+  background-color: var(--buttons-second);
+  color: var(--texts-background-small);
+}
+
+/* button green */
+
+.button-green {
+  background-color: var(--buttons-select);
+  border: 0;
+  border-radius: 4px;
+  color: var(--background-basic-2);
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  text-transform: uppercase;
+}
+
+.button-green:hover {
+  background-color: var(--buttons-green-hover);
+  cursor: pointer;
+}
+
+.button-green:focus {
+  background-color: var(--buttons-green-hover);
+}
+
+.button-green:active {
+  background-color: var(--buttons-select);
+  color: var(--texts-background-small);
+}
+
+
+
+/* page-header */
+
+
+
+.page-header {
+  padding: 0 70px;
+}
+
+/* navigation */
+
+
+
+.navigation-item {
+  padding: 0 16px;
+  height: 64px;
+  box-sizing: border-box;
+}
+
+.navigation-content {
+  display: inline;
+  padding: 20px 0 18px 0;
+  border-bottom: 2px solid transparent;
+  height: 64px;
+  box-sizing: border-box;
+}
+
+.navigation-active { /* добавляет подчеркивание в активный пункт меню */
+  border-bottom: 2px solid var(--buttons-basic);
+}
+
+.navigation-link:link {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+  color: var(--texts-texts-basic);
+}
+
+.navigation-link:visited {
+  color: var(--texts-texts-basic);
+}
+
+.navigation-link:hover {
+  color: var(--texts-second);
+}
+
+.navigation-link:active {
+  color: var(--texts-second);
+}
+
+
+
 /* hero */
+
 
 
 .hero {
@@ -48,12 +204,67 @@ img {
   height: auto;
   background-image: url(../images/background/hero-image.jpg);
   background-size: cover;
+  padding: 51px 0 0 0;
 }
-
 
 
 /* advantages */
 
+
+
+/* обертка преимуществ */
+
+.advantages-item-wrapper {
+  color: var(--texts-texts-basic);
+  background-color: var(--background-basic-2);
+  text-align: center;
+  width: 400px;
+  height: 385px;
+  padding: 0 85px;
+  box-sizing: border-box;
+}
+
+.blue-wrapper {
+  background-color: var(--background-basic-3);
+  color: var(--texts-background-default);
+}
+
+.light-grey-wrapper {
+  background-color: var(--background-second-1);
+}
+
+.grey-wrapper {
+  background-color: var(--background-second-2);
+}
+
+.grey-wrapper .text-blocks {
+  color: var(--texts-second);
+}
+
+.light-grey-wrapper .text-blocks {
+  color: var(--texts-second);
+}
+
+/* наполнение преимуществ */
+
+.white-wrapper {
+  background-color: var(--background-basic-2);
+}
+
+.white-wrapper .text-blocks {
+  color: var(--texts-second);
+}
+
+.advantages-item-separator {
+  background-color: currentColor;
+  opacity: 30%;
+  width: 60px;
+  height: 2px;
+}
+
+.advantages-item-wrapper .icon {
+  fill: var(--icons-second);
+}
 
 .advantages-list-image {
   height: 384px;
@@ -62,14 +273,69 @@ img {
 
 
 
+/* promo */
+
+
+.promo {
+  width: 100%;
+  height: auto;
+  padding: 64px 0;
+  text-align: center;
+}
+
+.promo .text-basic {
+  color: var( --texts-second);
+  margin-top: 25px;
+}
+
+
+
+/* hotel-search */
+
+
+.hotel-search {
+  padding: 96px 0;
+  text-align: center;
+}
+
+.hotel-search .heading-2 {
+  padding-bottom: 20px;
+}
+
+.hotel-search .text-basic {
+  margin-bottom: 54px;
+}
+
+
 /* subscribe */
 
 
 .subscribe {
   width: 100%;
-  height: 414px;
+  height: auto;
+  padding: 96px 0 104px 0;
   background-image: url(../images/background/canyon-blur-1.jpg);
   background-size: cover;
+  color: var(--texts-background-default);
+  text-align: center;
+}
+
+.subscribe-light {
+  background-image: none;
+  background-color: var(--background-basic-2);
+  color: var(--texts-texts-basic);
+}
+
+.subscribe-light .text-basic {
+  color: var(--texts-second);
+}
+
+.subscribe .heading-2 {
+  margin-bottom: 20px;
+}
+
+.subscribe .text-basic {
+  margin-bottom: 54px;
 }
 
 
@@ -82,4 +348,71 @@ img {
   height: 412px;
   background-image: url(../images/background/canyon-blur-1.jpg);
   background-size: cover;
+}
+
+
+
+/* footer */
+
+
+.social-list .icon {
+  fill: var(--icons-second);
+}
+
+.social-list .icon:visited {
+  fill: var(--icons-second);
+}
+
+.social-list .icon:hover {
+  fill: var(--icons-second-hover);
+}
+
+.social-list .icon:active {
+  fill: var(--icons-second-active);
+}
+
+.social-list .icon:focus {
+  fill: var(--icons-second-focus);
+}
+
+
+.footer-phone:link {
+  color: var(--texts-texts-basic);
+}
+
+.footer-phone:visited {
+  color: var(--texts-texts-basic);
+}
+
+.footer-phone:hover {
+  color: var(--texts-hover);
+}
+
+.footer-phone:active {
+  color: var(--texts-active);
+}
+
+.footer-phone:focus {
+  color: var(--texts-focus);
+}
+
+
+.htmlacademy-logo:link {
+  fill: var(--icons-basic);
+}
+
+.htmlacademy-logo:visited {
+  fill: var(--icons-basic);
+}
+
+.htmlacademy-logo:hover {
+  fill: var(--icons-hover);
+}
+
+.htmlacademy-logo:active {
+  fill: var(--icons-active);
+}
+
+.htmlacademy-logo:focus {
+  fill: var(--icons-focus);
 }

@@ -5,6 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/controls.css">
     <link rel="stylesheet" href="styles/colors.css">
     <link rel="stylesheet" href="styles/fonts.css">
   </head>
@@ -13,53 +14,54 @@
 
       <!--Page-header-->
 
-      <header class="page-header">
+      <header class="page-header container">
         <nav class="navigation">
-          <a class="navigation-logo" href="index.html">
-            <img class="page-header-logo" src="images/vector/sedona-logo.svg" alt="Логотип города Седона">
-          </a>
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="index.html">
-                <div class="navigation-content navigation-active">
+          <div class="navigation-primary">
+            <a class="navigation-logo" href="index.html">
+              <img class="page-header-logo" src="images/vector/sedona-logo.svg" alt="Логотип города Седона">
+            </a>
+            <ul class="navigation-list heading-4">
+              <li class="navigation-item">
+                <a class="navigation-link active" href="index.html">
                   Главная
-                </div>
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <div class="navigation-content">
+                </a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link default" href="#">
                   О Седоне
-                </div>
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">
-                <div class="navigation-content">
+                </a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link default" href="catalog.html">
                   Гостиницы
-                </div>
-              </a>
-            </li>
-          </ul>
-          <ul class="navigation-list-icon">
-            <li class="navigation-item-icon">
-              <a class="navigation-icon" href="#">
-                <span class="visually-hidden">Поиск</span>
-                <svg class="icon" width="20" height="20">
-                  <use xlink:href="images/sprite.svg#search"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="navigation-item-icon">
-              <a class="navigation-icon" href="#">
-                <span class="visually-hidden">Избранное</span>
-                <svg class="icon" width="20" height="20">
-                  <use xlink:href="images/sprite.svg#favorite"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <button class="button-brown" type="button">Хочу сюда!</button>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="navigation-secondary">
+            <ul class="navigation-icons">
+              <li class="navigation-menu-item">
+                <a class="navigation-icon" href="#">
+                  <span class="visually-hidden">Поиск</span>
+                  <svg class="icon" width="20" height="20">
+                    <use xlink:href="images/sprite.svg#search"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="navigation-menu-item">
+                <a class="navigation-icon" href="#">
+                  <span class="visually-hidden">Избранное</span>
+                  <span class="navigation-counter text-micro">
+                    12
+                  </span>
+                  <svg class="icon" width="20" height="20">
+                    <use xlink:href="images/sprite.svg#favorite"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <li class="navigation-controls">
+              <button class="button button-400 button-brown text-button-small" type="button">Хочу сюда!</button>
             </li>
           </ul>
         </nav>
@@ -181,7 +183,7 @@
           <h2 class="visually-hidden">Поиск гостиницы</h2>
           <p class="heading-2">Заинтересовались?</p>
           <p class="text-basic">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="button-brown" type="button">Поиск гостиницы в седоне</button>
+          <button class="button button-500 button-brown text-button-big" type="button">Поиск гостиницы в седоне</button>
         </section>
 
         <!--subscribe-->
@@ -191,7 +193,7 @@
           <p class="text-basic">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="subscribe-email-field" type="email" id="user-email">
-            <button class="button-blue" type="submit">Подписаться</button>
+            <button class="button button-500 button-blue text-button-big" type="submit">Подписаться</button>
           </form>
         </section>
       </main>

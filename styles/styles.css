@@ -1,3 +1,10 @@
+/* common */
+
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
@@ -48,137 +55,42 @@ img {
   fill: var(--icons-basic);
 }
 
-
-
-/* buttons */
-
-
-/* button brown */
-
-.button-brown {
-  background-color: var(--buttons-basic);
-  border: 0;
-  border-radius: 4px;
-  color: var(--background-basic-2);
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px; /* 125% */
-  text-transform: uppercase;
+.container {
+  padding: 0 70px;
 }
 
-.button-brown:hover {
-  background-color: var(--buttons-brown-hover);
-  cursor: pointer;
-}
-
-.button-brown:focus {
-  background-color: var(--buttons-brown-hover);
-}
-
-.button-brown:active {
-  background-color: var(--buttons-basic);
-  color: var(--texts-background-small);
-}
-
-/* button blue */
-
-.button-blue {
-  background-color: var(--buttons-second);
-  border: 0;
-  border-radius: 4px;
-  color: var(--background-basic-2);
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px; /* 125% */
-  text-transform: uppercase;
-}
-
-.button-blue:hover {
-  background-color: var(--buttons-blue-hover);
-  cursor: pointer;
-}
-
-.button-blue:focus {
-  background-color: var(--buttons-blue-hover);
-}
-
-.button-blue:active {
-  background-color: var(--buttons-second);
-  color: var(--texts-background-small);
-}
-
-/* button green */
-
-.button-green {
-  background-color: var(--buttons-select);
-  border: 0;
-  border-radius: 4px;
-  color: var(--background-basic-2);
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px; /* 125% */
-  text-transform: uppercase;
-}
-
-.button-green:hover {
-  background-color: var(--buttons-green-hover);
-  cursor: pointer;
-}
-
-.button-green:focus {
-  background-color: var(--buttons-green-hover);
-}
-
-.button-green:active {
-  background-color: var(--buttons-select);
-  color: var(--texts-background-small);
-}
 
 
 
 /* page-header */
 
 
-
 .page-header {
-  padding: 0 70px;
-}
-
-/* navigation */
-
-
-
-.navigation-item {
-  padding: 0 16px;
   height: 64px;
-  box-sizing: border-box;
 }
 
-.navigation-content {
-  display: inline;
-  padding: 20px 0 18px 0;
-  border-bottom: 2px solid transparent;
+.navigation {
+  display: flex;
+  justify-content: space-between;
   height: 64px;
-  box-sizing: border-box;
 }
 
-.navigation-active { /* добавляет подчеркивание в активный пункт меню */
-  border-bottom: 2px solid var(--buttons-basic);
+.navigation-primary { /* navigation-primary */
+  display: flex;
+  gap: 30px;
+}
+
+.navigation-list {
+  display: flex;
 }
 
 .navigation-link:link {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px; /* 120% */
   color: var(--texts-texts-basic);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px 16px 0 16px;
+
 }
 
 .navigation-link:visited {
@@ -186,17 +98,89 @@ img {
 }
 
 .navigation-link:hover {
-  color: var(--texts-second);
+  color: var(--texts-hover);
 }
 
 .navigation-link:active {
-  color: var(--texts-second);
+  color: var(--texts-hover);
 }
+
+.default::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: none;
+}
+
+.active::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--texts-hover);
+}
+
+.navigation-secondary { /* navigation-secondary */
+  display: flex;
+  gap: 20px;
+}
+
+.navigation-icons {
+  display: flex;
+}
+
+.navigation-menu-item {
+  position: relative;
+}
+
+.navigation-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 64px;
+}
+
+.navigation-icon:link .icon {
+  fill: var(--icons-basic);
+}
+
+.navigation-icon:visited .icon {
+  fill: var(--icons-basic);
+}
+
+.navigation-icon:hover .icon {
+  fill: var(--icons-hover);
+}
+
+.navigation-icon:active .icon {
+  fill: var(--icons-active);
+}
+
+.navigation-icon:focus .icon {
+  fill: var(--icons-focus);
+}
+
+.navigation-counter {
+  color: var(--texts-background-default);
+  background-color: var(--buttons-select);
+  border-radius: 10px;
+  padding: 5px;
+  position: absolute;
+  top: 11px;
+  right: 4px;
+
+}
+
+.navigation-controls {
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+
 
 
 
 /* hero */
-
 
 
 .hero {
@@ -208,13 +192,12 @@ img {
 }
 
 
+
+
 /* advantages */
 
 
-
-/* обертка преимуществ */
-
-.advantages-item-wrapper {
+.advantages-item-wrapper { /* обертка преимуществ */
   color: var(--texts-texts-basic);
   background-color: var(--background-basic-2);
   text-align: center;
@@ -245,9 +228,7 @@ img {
   color: var(--texts-second);
 }
 
-/* наполнение преимуществ */
-
-.white-wrapper {
+.white-wrapper { /* наполнение преимуществ */
   background-color: var(--background-basic-2);
 }
 
@@ -273,6 +254,7 @@ img {
 
 
 
+
 /* promo */
 
 
@@ -283,10 +265,14 @@ img {
   text-align: center;
 }
 
+.promo .heading-2 {
+  margin-bottom: 25px;
+}
+
 .promo .text-basic {
   color: var( --texts-second);
-  margin-top: 25px;
 }
+
 
 
 
@@ -307,10 +293,12 @@ img {
 }
 
 
+
+
 /* subscribe */
 
 
-.subscribe {
+.subscribe { /* контейнер */
   width: 100%;
   height: auto;
   padding: 96px 0 104px 0;
@@ -320,10 +308,9 @@ img {
   text-align: center;
 }
 
-.subscribe-light {
+.subscribe-light { /* контейнер без фона */
   background-image: none;
   background-color: var(--background-basic-2);
-  color: var(--texts-texts-basic);
 }
 
 .subscribe-light .text-basic {
@@ -338,16 +325,29 @@ img {
   margin-bottom: 54px;
 }
 
+.subscribe .button {
+  border-radius:  0 4px 4px 0;
+}
+
+
 
 
 /* inner-header */
 
 
-.inner-header {
+.catalog-header {
   width: 100%;
   height: 412px;
   background-image: url(../images/background/canyon-blur-1.jpg);
   background-size: cover;
+}
+
+.breadcrumbs {
+  display: flex;
+}
+
+.filter-form {
+  display: flex;
 }
 
 
@@ -355,7 +355,7 @@ img {
 /* footer */
 
 
-.social-list .icon {
+.social-list .icon { /* ссылка на соц. сеть */
   fill: var(--icons-second);
 }
 
@@ -375,8 +375,7 @@ img {
   fill: var(--icons-second-focus);
 }
 
-
-.footer-phone:link {
+.footer-phone:link { /* телефон */
   color: var(--texts-texts-basic);
 }
 
@@ -396,8 +395,7 @@ img {
   color: var(--texts-focus);
 }
 
-
-.htmlacademy-logo:link {
+.htmlacademy-logo:link {  /* ссылка на сайт Html academy */
   fill: var(--icons-basic);
 }
 

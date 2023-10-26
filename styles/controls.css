@@ -1,0 +1,110 @@
+/* buttons */
+
+
+
+/*
+Текстовые стили
+button-600: heading-4
+button-500: text-button-big
+button-400: text-button-small
+*/
+
+.button {  /* общие правила */
+  border: 0;
+  color: var(--background-basic-2);
+}
+
+.button-600 { /* размер большой */
+  border-radius: 10px;
+  padding: 18px 50px;
+}
+
+.button-500 {  /* размер средний */
+  border-radius: 4px;
+  padding: 8px 50px;
+}
+
+.button-400 {  /* размер маленький */
+  border-radius: 4px;
+  padding: 8px 34px;
+}
+
+.button-pagination { /* размер для пагинации */
+  padding: 12px 16px;
+  min-width: 60px;
+}
+
+.button-blue { /* стиль голубой */
+  background-color: var(--buttons-second);
+}
+
+.button-blue:hover {
+  background-color: var(--buttons-blue-hover);
+  cursor: pointer;
+}
+
+.button-blue:focus {
+  background-color: var(--buttons-blue-hover);
+}
+
+.button-blue:active {
+  background-color: var(--buttons-second);
+  color: var(--texts-background-small);
+}
+
+.button-brown { /* стиль коричневый */
+  background-color: var(--buttons-basic);
+}
+
+.button-brown:hover {
+  background-color: var(--buttons-brown-hover);
+  cursor: pointer;
+}
+
+.button-brown:focus {
+  background-color: var(--buttons-brown-hover);
+}
+
+.button-brown:active {
+  background-color: var(--buttons-basic);
+  color: var(--texts-background-small);
+}
+
+.button-green { /* стиль зеленый */
+  background-color: var(--buttons-select);
+}
+
+.button-green:hover {
+  background-color: var(--buttons-green-hover);
+  cursor: pointer;
+}
+
+.button-green:focus {
+  background-color: var(--buttons-green-hover);
+}
+
+.button-green:active {
+  background-color: var(--buttons-select);
+  color: var(--texts-background-small);
+}
+
+.button-transparent { /* стиль прозрачный */
+  background-color: transparent;
+}
+
+.button-transparent:hover {
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.button-transparent:focus {
+  border: 3px solid;
+}
+
+.button-transparent:active {
+  color: var(--texts-background-small);
+}
+
+.button-grey { /* цвет серый */
+  background-color: var(--forms-elements-2);
+}

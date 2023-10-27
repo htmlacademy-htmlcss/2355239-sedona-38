@@ -1,7 +1,6 @@
 /* buttons */
 
 
-
 /*
 Текстовые стили
 button-600: heading-4
@@ -107,6 +106,6 @@ button-pagination: text-button-big
   color: var(--texts-background-small);
 }
 
-.button-grey { /* цвет серый */
+.button-grey { /* стиль серый */
   background-color: var(--forms-elements-2);
 }

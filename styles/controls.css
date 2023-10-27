@@ -7,6 +7,7 @@
 button-600: heading-4
 button-500: text-button-big
 button-400: text-button-small
+button-pagination: text-button-big
 */
 
 .button {  /* общие правила */
@@ -30,8 +31,9 @@ button-400: text-button-small
 }
 
 .button-pagination { /* размер для пагинации */
+  color: var(--texts-texts-basic);
   padding: 12px 16px;
-  min-width: 60px;
+  width: 60px;
 }
 
 .button-blue { /* стиль голубой */

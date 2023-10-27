@@ -351,9 +351,13 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 54px;
-  padding: 96px 304px;
+  padding: 96px 258px;
   background-image: url(../images/background/canyon-blur-1.jpg);
   background-size: cover;
+}
+
+.subscribe .title-caption {
+  padding: 0 104px;
 }
 
 .subscribe-light { /* контейнер без фона */

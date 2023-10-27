@@ -281,7 +281,7 @@ img {
   padding: 0 28px;
 }
 
-.advantages h3::after { /* разделитель */
+.advantages-first-grid h3::after { /* разделитель */
   content: "";
   width: 60px;
   height: 2px;

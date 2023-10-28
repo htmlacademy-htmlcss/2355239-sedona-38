@@ -1,59 +1,59 @@
 :root{
 
-  /* texts */
+  /* main */
 
-  --texts-texts-basic:rgb(0 0 0);
-  --texts-hover:rgb(117 97 87);
-  --texts-focus:rgb(117 97 87);
-  --texts-active:rgb(117 97 87 / 0.3);
+  --main-primary: rgb(255 255 255);
+  --main-secondary: rgb(230 230 230);
+  --main-light:rgb(131 179 211 / 0.2);
+  --main-extra-light:rgb(131 179 211 / 0.12);
 
-  --texts-second:rgb(51 51 51);
-  --texts-background-default:rgb(255 255 255);
-  --texts-background-small:rgb(255 255 255 / 0.3);
-  --texts-error:rgb(255 87 87);
+  --main-brown:rgb(117 97 87);
+  --main-brown-hover: rgb(97 80 72);
 
-  /* inputs */
+  --main-blue:rgb(130 179 211);
+  --main-blue-hover:rgb(104 162 202);
 
-  --buttons-basic:rgb(117 97 87);
-  --buttons-brown-hover: rgb(97 80 72);
+  --main-green:rgb(125 181 79);
+  --main-green-hover:rgba(108 158 66);
 
-  --buttons-second:rgb(130 179 211);
-  --buttons-blue-hover:rgb(104 162 202);
+  --main-gray: rgb(242 242 242);
+  --main-gray-hover: rgb(230 230 230);
 
-  --buttons-select:rgb(125 181 79);
-  --buttons-green-hover:rgba(108 158 66);
+  --main-disabled: rgb(229 229 229);
 
-  --buttons-disabled: rgb(229 229 229);
+  /* text */
 
-  --background-basic-2:rgb(255 255 255);
-  --background-basic-3:rgb(130 179 211);
-  --background-second-1:rgb(131 179 211 / 0.12);
-  --background-second-2:rgb(131 179 211 / 0.2);
+  --text-primary:rgb(0 0 0);
+  --text-secondary:rgb(51 51 51);
 
-  /* icons */
+  --text-primary-invert:rgb(255 255 255);
+  --text-secondary-invert:rgb(255 255 255 / 0.3);
 
-  --icons-basic:rgb(0 0 0);
-  --icons-hover:rgb(117 97 87);
-  --icons-focus:rgb(117 97 87);
-  --icons-active:rgb(117 97 87 / 0.3);
+  --text-primary-hover:rgb(117 97 87);
+  --text-primary-active:rgb(117 97 87 / 0.3);
+  --text-primary-focus:rgb(117 97 87);
 
-  --icons-second:rgb(131 179 211);
-  --icons-second-hover:rgb(104 162 202);
-  --icons-second-focus:rgb(104 162 202);
-  --icons-second-active:rgb(104 162 202);
+  --text-error:rgb(255 87 87);
 
-  --icons-text:rgb(125 181 79);
+  /* icon */
+
+  --icon-primary:rgb(0 0 0);
+  --icon-primary-hover:rgb(117 97 87);
+  --icon-primary-active:rgb(117 97 87 / 0.3);
+  --icon-primary-focus:rgb(117 97 87);
+
+  --icon-secondary:rgb(131 179 211);
+  --icon-secondary-hover:rgb(104 162 202);
+  --icon-secondary-active:rgb(104 162 202);
+  --icon-secondary-focus:rgb(104 162 202);
 
   /* forms */
 
-  --forms-inputs:rgb(63 94 114);
+  --forms-input:rgb(63 94 114);
   --forms-elements-1:rgb(229 229 229);
   --forms-elements-2:rgb(242 242 242);
 
   /* extra */
 
-  --basic-white: rbg(255 255 255);
-  --basic-gray: rgb(230 230 230);
-  --border: rgb(230 230 230);
-  --special-cold-light: rgb(131 179 211);
+  --focus: rgb(131 179 211);
 }

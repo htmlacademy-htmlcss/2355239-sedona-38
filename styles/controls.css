@@ -1,4 +1,4 @@
-/* buttons */
+/* input */
 
 
 /*
@@ -9,10 +9,24 @@ button-400: text-button-small
 button-pagination: text-button-big
 */
 
-.button {  /* общие правила */
+.button {  /* кнопка с темным фоном и светлым текстом */
   border: 0;
-  color: var(--background-basic-2);
+  color: var(--text-primary-invert);
   text-align: center;
+}
+
+.button:active { /* текст светлеет при нажатии */
+  color: var(--text-secondary-invert);
+}
+
+.button-invert {  /* кнопка со светлым фоном и темным текстом */
+  border: 0;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.button-invert:active { /* текст светлеет при нажатии */
+  color: var(--text-primary-invert);
 }
 
 .button-600 { /* размер большой */
@@ -30,86 +44,125 @@ button-pagination: text-button-big
   padding: 8px 34px;
 }
 
-.button-pagination { /* размер для пагинации */
-  color: var(--texts-texts-basic);
-  padding: 12px 16px;
-  width: 60px;
-}
-
 .button-blue { /* стиль голубой */
-  background-color: var(--buttons-second);
+  background-color: var(--main-blue);
 }
 
 .button-blue:hover {
-  background-color: var(--buttons-blue-hover);
+  background-color: var(--main-blue-hover);
   cursor: pointer;
 }
 
 .button-blue:active {
-  background-color: var(--buttons-second);
-  color: var(--texts-background-small);
+  background-color: var(--main-blue);
 }
 
 .button-blue:focus {
-  background-color: var(--buttons-blue-hover);
+  background-color: var(--main-blue-hover);
 }
 
 .button-brown { /* стиль коричневый */
-  background-color: var(--buttons-basic);
+  background-color: var(--main-brown);
 }
 
 .button-brown:hover {
-  background-color: var(--buttons-brown-hover);
+  background-color: var(--main-brown-hover);
   cursor: pointer;
 }
 
 .button-brown:active {
-  background-color: var(--buttons-basic);
-  color: var(--texts-background-small);
+  background-color: var(--main-brown);
 }
 
 .button-brown:focus {
-  background-color: var(--buttons-brown-hover);
+  background-color: var(--main-brown-hover);
 }
 
 .button-green { /* стиль зеленый */
-  background-color: var(--buttons-select);
+  background-color: var(--main-green);
 }
 
 .button-green:hover {
-  background-color: var(--buttons-green-hover);
+  background-color: var(--main-green-hover);
   cursor: pointer;
 }
 
 .button-green:active {
-  background-color: var(--buttons-select);
-  color: var(--texts-background-small);
+  background-color: var(--main-green);
 }
 
 .button-green:focus {
-  background-color: var(--buttons-green-hover);
+  background-color: var(--main-green-hover);
 }
 
-.button-transparent { /* стиль прозрачный */
+.button-transparent-invert { /* стиль прозрачный, текст светлый */
   background-color: transparent;
 }
 
-.button-transparent:hover {
+.button-transparent-invert:hover {
   opacity: 60%;
   cursor: pointer;
 }
 
-.button-transparent:active {
-  color: var(--texts-background-small);
+.button-transparent-invert:active {
+  color: var(--text-secondary-invert);
 }
 
-.button-transparent:focus {
+.button-transparent-invert:focus {
   border: 3px solid;
 }
 
-.button-grey { /* стиль серый */
-  background-color: var(--forms-elements-2);
+
+
+/* pagination */
+
+.button-pagination { /* размер для пагинации */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  color: var(--text-primary);
 }
+
+.button-pagination:hover {
+  cursor: pointer;
+}
+
+.button-pagination-grey { /* стиль серый */
+  background-color: var(--main-gray);
+}
+
+.button-pagination-white { /* стиль серый */
+  background-color: var(--main-primary);
+}
+
+.button-pagination-blue { /* стиль голубой */
+  background-color: var(--main-blue);
+  color: var(--text-primary-invert);
+}
+
+.button-pagination-blue:hover {
+  background-color: var(--main-blue-hover);
+  border: 1px solid var(--main-blue);
+}
+
+.button-pagination-grey:active {
+  background-color: var(--main-blue);
+  color: var(--text-secondary-invert);
+}
+
+.button-pagination-grey:focus {
+  background-color: var(--main-blue-hover);
+  border: 1px solid var(--main-blue);
+}
+
+
+
+
+
+
 
 
 
@@ -123,31 +176,35 @@ button-pagination: text-button-big
   justify-content: center;
   width: 48px;
   height: 48px;
-  background-color: var(--basic-white);
+  background-color: var(--main-primary);
   border: 2px solid var(--forms-elements-1);
   border-radius: 4px;
 }
 
 .tab:hover {
-  border: 2px solid var(--icons-basic);
+  border: 2px solid var(--icon-primary);
 }
 
 .tab:active {
-  border: 2px solid var(--icons-basic);
+  border: 2px solid var(--icon-primary);
 }
 
 .tab:focus {
-  border: 2px solid var(--icons-second-hover);
+  border: 2px solid var(--icon-secondary-hover);
 }
 
 .tab-current {
-  border: 2px solid var(--icons-basic);
+  border: 2px solid var(--icon-primary);
 }
 
 
 
 
+/* select */
 
+
+.select {
+}
 
 
 
@@ -177,7 +234,7 @@ button-pagination: text-button-big
 }
 
 .control-input { /* сам контрол */
-  background-color: var(--background-basic-2);
+  background-color: var(--main-primary);
   width: 20px;
   height: 20px;
   margin: 0 16px 0 0;

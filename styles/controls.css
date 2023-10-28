@@ -114,6 +114,51 @@ button-pagination: text-button-big
 
 
 
+/* tabs */
+
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: var(--basic-white);
+  border: 2px solid var(--forms-elements-1);
+  border-radius: 4px;
+}
+
+.tab:hover {
+  border: 2px solid var(--icons-basic);
+}
+
+.tab:active {
+  border: 2px solid var(--icons-basic);
+}
+
+.tab:focus {
+  border: 2px solid var(--icons-second-hover);
+}
+
+.tab-current {
+  border: 2px solid var(--icons-basic);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* checkbox */
 
 

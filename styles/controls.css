@@ -12,6 +12,7 @@ button-pagination: text-button-big
 .button {  /* общие правила */
   border: 0;
   color: var(--background-basic-2);
+  text-align: center;
 }
 
 .button-600 { /* размер большой */
@@ -44,13 +45,13 @@ button-pagination: text-button-big
   cursor: pointer;
 }
 
-.button-blue:focus {
-  background-color: var(--buttons-blue-hover);
-}
-
 .button-blue:active {
   background-color: var(--buttons-second);
   color: var(--texts-background-small);
+}
+
+.button-blue:focus {
+  background-color: var(--buttons-blue-hover);
 }
 
 .button-brown { /* стиль коричневый */
@@ -62,13 +63,13 @@ button-pagination: text-button-big
   cursor: pointer;
 }
 
-.button-brown:focus {
-  background-color: var(--buttons-brown-hover);
-}
-
 .button-brown:active {
   background-color: var(--buttons-basic);
   color: var(--texts-background-small);
+}
+
+.button-brown:focus {
+  background-color: var(--buttons-brown-hover);
 }
 
 .button-green { /* стиль зеленый */
@@ -80,13 +81,13 @@ button-pagination: text-button-big
   cursor: pointer;
 }
 
-.button-green:focus {
-  background-color: var(--buttons-green-hover);
-}
-
 .button-green:active {
   background-color: var(--buttons-select);
   color: var(--texts-background-small);
+}
+
+.button-green:focus {
+  background-color: var(--buttons-green-hover);
 }
 
 .button-transparent { /* стиль прозрачный */
@@ -98,14 +99,41 @@ button-pagination: text-button-big
   cursor: pointer;
 }
 
-.button-transparent:focus {
-  border: 3px solid;
-}
-
 .button-transparent:active {
   color: var(--texts-background-small);
 }
 
+.button-transparent:focus {
+  border: 3px solid;
+}
+
 .button-grey { /* стиль серый */
   background-color: var(--forms-elements-2);
+}
+
+
+
+
+/* checkbox */
+
+
+.control { /* input+label */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.control:hover {
+  opacity: 60%;
+}
+
+.control:active {
+  opacity: 30%;
+}
+
+.control-input { /* сам контрол */
+  background-color: var(--background-basic-2);
+  width: 20px;
+  height: 20px;
+  margin: 0 16px 0 0;
 }

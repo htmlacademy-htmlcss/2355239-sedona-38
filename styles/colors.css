@@ -12,7 +12,7 @@
   --texts-background-small:rgb(255 255 255 / 0.3);
   --texts-error:rgb(255 87 87);
 
-  /* buttons */
+  /* inputs */
 
   --buttons-basic:rgb(117 97 87);
   --buttons-brown-hover: rgb(97 80 72);
@@ -24,8 +24,6 @@
   --buttons-green-hover:rgba(108 158 66);
 
   --buttons-disabled: rgb(229 229 229);
-
-
 
   --background-basic-2:rgb(255 255 255);
   --background-basic-3:rgb(130 179 211);
@@ -51,4 +49,11 @@
   --forms-inputs:rgb(63 94 114);
   --forms-elements-1:rgb(229 229 229);
   --forms-elements-2:rgb(242 242 242);
+
+  /* extra */
+
+  --basic-white: rbg(255 255 255);
+  --basic-gray: rgb(230 230 230);
+  --border: rgb(230 230 230);
+  --special-cold-light: rgb(131 179 211);
 }

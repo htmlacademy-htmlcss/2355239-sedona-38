@@ -4,14 +4,14 @@
 }
 
 body {
+  margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
-  background-color: var(--main-gray);
-  margin: 0;
   color: var(--text-primary);
+  background-color: var(--main-gray);
 }
 
 h1, h2, h3, h4, p {
@@ -23,9 +23,9 @@ a {
 }
 
 ul {
-  list-style-type: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 img {
@@ -36,17 +36,17 @@ img {
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  clip: rect(0 0 0 0);
 }
 
 .page-content-container {
-  background-color: var(--main-primary);
   width: 1200px;
   height: auto;
   margin: auto;
+  background-color: var(--main-primary);
   box-shadow: rgb(0 0 0 / 0.2) 0 0 15px 0;
 }
 
@@ -57,8 +57,6 @@ img {
 .container {
   padding: 0 70px;
 }
-
-
 
 
 /* title-caption - заголовок + подпись */
@@ -85,8 +83,6 @@ img {
 }
 
 
-
-
 /* page-header */
 
 
@@ -110,11 +106,11 @@ img {
 }
 
 .navigation-link:link {
-  color: var(--text-primary);
   display: flex;
   flex-direction: column;
   gap: 18px;
   padding: 20px 16px 0 16px;
+  color: var(--text-primary);
 }
 
 .navigation-link:visited {
@@ -185,13 +181,13 @@ img {
 }
 
 .navigation-counter {
-  color: var(--text-primary-invert);
-  background-color: var(--main-green);
-  border-radius: 10px;
-  padding: 5px;
   position: absolute;
   top: 11px;
   right: 4px;
+  padding: 5px;
+  color: var(--text-primary-invert);
+  background-color: var(--main-green);
+  border-radius: 10px;
 }
 
 .navigation-controls {
@@ -199,8 +195,6 @@ img {
   align-items: center;
   height: 64px;
 }
-
-
 
 
 /* hero */
@@ -213,15 +207,13 @@ img {
   gap: 25px;
   padding: 51px 0 82px 0;
   background-image: url(../images/background/hero-image.jpg);
-  background-size: cover;
+  object-fit: cover;
   clip-path: polygon(100% 0, 100% 88%, 79% 93%, 79% 88%, 50% 100%, 21% 88%, 21% 93%, 0 88%, 0 0);
 }
 
 .hero-image {
   width: 458px;
 }
-
-
 
 
 /* advantages */
@@ -238,15 +230,15 @@ img {
 }
 
 .advantages-wrapper { /* обертка базовая белая */
-  color: var(--text-primary);
-  background-color: var(--main-primary);
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 30px;
   padding: 40px 85px;
+  text-align: center;
+  color: var(--text-primary);
+  background-color: var(--main-primary);
 }
 
 .wrapper-grey { /* цвет обертки серый */
@@ -258,8 +250,8 @@ img {
 }
 
 .wrapper-blue { /* цвет обертки голубой */
-  background-color: var(--main-blue);
   color: var(--text-primary-invert);
+  background-color: var(--main-blue);
 }
 
 .advantages-wrapper .text-blocks { /* цвет подписи */
@@ -305,12 +297,10 @@ img {
 }
 
 .advantages-image {
-  object-fit: cover;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
-
-
 
 
 /* promo */
@@ -329,16 +319,14 @@ img {
   max-width: 656px;
 }
 
-.extra-promo { /* увеличенный отступ снизу */
-  padding-bottom: 37px;
+.promo-special { /* промоблок под hero */
   min-height: 280px;
+  padding-bottom: 37px;
 }
 
-.extra-promo .title-caption { /* увеличенный гэп для текста */
+.promo-special .title-caption { /* увеличенный гэп для текста */
   gap: 25px;
 }
-
-
 
 
 /* hotel-search */
@@ -353,8 +341,6 @@ img {
 }
 
 
-
-
 /* subscribe */
 
 
@@ -365,7 +351,7 @@ img {
   gap: 54px;
   padding: 96px 258px 104px 258px;
   background-image: url(../images/background/canyon-blur-1.jpg);
-  background-size: cover;
+  object-fit: cover;
 }
 
 .subscribe .title-caption {
@@ -382,17 +368,15 @@ img {
 }
 
 
-
-
 /* inner-header */
 
 
 .catalog-header {
-  color: var(--text-primary-invert);
   display: flex;
   flex-direction: column;
   gap: 40px;
   padding: 35px 70px 70px;
+  color: var(--text-primary-invert);
   background-image: url(../images/background/canyon-blur-2.jpg);
   background-size: cover;
 }
@@ -402,19 +386,6 @@ img {
   flex-direction: column;
   gap: 8px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* filters */
@@ -428,10 +399,10 @@ img {
 .filter-form-group { /* филдсет */
   display: flex;
   flex-direction: column;
-  border: 0;
+  gap: 36px;
   margin: 0;
   padding: 0;
-  gap: 36px;
+  border: 0;
 }
 
 .filter-form-list { /* список контролов в филдсете */
@@ -446,8 +417,6 @@ img {
 }
 
 
-
-
 /* filter-controls */
 
 
@@ -460,8 +429,6 @@ img {
 }
 
 
-
-
 /* listing */
 
 
@@ -471,8 +438,6 @@ img {
   gap: 40px;
   padding: 50px 70px;
 }
-
-
 
 
 /* catalog-settings */
@@ -492,8 +457,6 @@ img {
   display: flex;
   gap: 8px;
 }
-
-
 
 
 /* catalog-products */
@@ -520,8 +483,6 @@ img {
 }
 
 
-
-
 /* product-item */
 
 
@@ -529,10 +490,10 @@ img {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 19px;
   background-color: var(--main-primary);
   border: 1px solid var(--main-secondary);
   border-radius: 4px;
-  padding: 19px;
 }
 
 .product-item-parameters { /* блок с параметрами */
@@ -546,10 +507,9 @@ img {
 }
 
 .product-item-actions .button {
-  padding-left: 12px;
-  padding-right: 12px;
   width: 100%;
-
+  padding-right: 12px;
+  padding-left: 12px;
 }
 
 .rating { /* звезды + рейтинг */
@@ -574,14 +534,12 @@ img {
 }
 
 .rating-value { /* блок с рейтингом */
+  width: 100%;
+  padding: 8px 0;
+  text-align: center;
   background-color: var(--main-gray);
   border-radius: 4px;
-  padding: 8px 0;
-  width: 100%;
-  text-align: center;
 }
-
-
 
 
 /* catalog-pagination */
@@ -591,8 +549,6 @@ img {
   display: flex;
   gap: 8px;
 }
-
-
 
 
 /* footer */
@@ -660,7 +616,7 @@ img {
   color: var(--text-primary-active);
 }
 
-.footer-phone::focus-visible {
+.footer-phone:focus-visible {
   color: var(--text-primary);
 }
 

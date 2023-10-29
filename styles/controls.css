@@ -9,10 +9,10 @@ button-400: text-button-small
 button-pagination: text-button-big
 */
 
-.button {  /* кнопка с темным фоном и светлым текстом */
-  border: 0;
-  color: var(--text-primary-invert);
+.button {  /* кнопка, базовые параметры */
   text-align: center;
+  color: var(--text-primary-invert);
+  border: 0;
 }
 
 .button:active { /* текст светлеет при нажатии */
@@ -20,9 +20,9 @@ button-pagination: text-button-big
 }
 
 .button-invert {  /* кнопка со светлым фоном и темным текстом */
-  border: 0;
-  color: var(--text-primary);
   text-align: center;
+  color: var(--text-primary);
+  border: 0;
 }
 
 .button-invert:active { /* текст светлеет при нажатии */
@@ -30,18 +30,18 @@ button-pagination: text-button-big
 }
 
 .button-600 { /* размер большой */
-  border-radius: 10px;
   padding: 18px 50px;
+  border-radius: 10px;
 }
 
 .button-500 {  /* размер средний */
-  border-radius: 4px;
   padding: 8px 50px;
+  border-radius: 4px;
 }
 
 .button-400 {  /* размер маленький */
-  border-radius: 4px;
   padding: 8px 34px;
+  border-radius: 4px;
 }
 
 .button-blue { /* стиль голубой */
@@ -95,7 +95,7 @@ button-pagination: text-button-big
   background-color: var(--main-green-hover);
 }
 
-.button-transparent-invert { /* стиль прозрачный, текст светлый */
+.button-transparent-invert { /* стиль прозрачный */
   background-color: transparent;
 }
 
@@ -113,8 +113,8 @@ button-pagination: text-button-big
 }
 
 
-
 /* pagination */
+
 
 .button-pagination { /* размер для пагинации */
   display: flex;
@@ -122,8 +122,8 @@ button-pagination: text-button-big
   justify-content: center;
   width: 60px;
   height: 60px;
-  border-radius: 4px;
   color: var(--text-primary);
+  border-radius: 4px;
 }
 
 .button-pagination:hover {
@@ -139,8 +139,8 @@ button-pagination: text-button-big
 }
 
 .button-pagination-blue { /* стиль голубой */
-  background-color: var(--main-blue);
   color: var(--text-primary-invert);
+  background-color: var(--main-blue);
 }
 
 .button-pagination-blue:hover {
@@ -159,15 +159,13 @@ button-pagination: text-button-big
 }
 
 
-
-
 /* breadcrumbs */
 
 
 .breadcrumbs { /* контейнер с крошками */
   display: flex;
-  height: 22px;
   align-items: center;
+  height: 22px;
 }
 
 .breadcrumbs-link:link { /* ссылка */
@@ -193,17 +191,13 @@ button-pagination: text-button-big
 }
 
 .breadcrumbs-icon { /* иконки в крошках */
-  fill: var(--text-primary-invert);
   display: flex;
+  fill: var(--text-primary-invert);
 }
 
 .breadcrumbs-arrow { /* стрелка */
   margin-right: 4px;
 }
-
-
-
-
 
 
 /* tabs */
@@ -237,23 +231,6 @@ button-pagination: text-button-big
 }
 
 
-
-
-/* select */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* checkbox */
 
 
@@ -272,8 +249,8 @@ button-pagination: text-button-big
 }
 
 .control-input { /* сам контрол */
-  background-color: var(--main-primary);
   width: 20px;
   height: 20px;
   margin: 0 16px 0 0;
+  background-color: var(--main-primary);
 }

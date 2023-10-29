@@ -161,6 +161,45 @@ button-pagination: text-button-big
 
 
 
+/* breadcrumbs */
+
+
+.breadcrumbs { /* контейнер с крошками */
+  display: flex;
+  height: 22px;
+  align-items: center;
+}
+
+.breadcrumbs-link:link { /* ссылка */
+  color: var(--text-primary-invert);
+}
+
+.breadcrumbs-link:visited {
+  color: var(--text-primary-invert);
+}
+
+.breadcrumbs-link:hover {
+  color: var(--text-primary-invert);
+  opacity: 60%;
+}
+
+.breadcrumbs-link:active {
+  color: var(--text-primary-invert);
+  opacity: 60%;
+}
+
+.breadcrumbs-link:focus-visible {
+  color: var(--text-primary-invert);
+}
+
+.breadcrumbs-icon { /* иконки в крошках */
+  fill: var(--text-primary-invert);
+  display: flex;
+}
+
+.breadcrumbs-arrow { /* стрелка */
+  margin-right: 4px;
+}
 
 
 

@@ -57,7 +57,7 @@ button-pagination: text-button-big
   background-color: var(--main-blue);
 }
 
-.button-blue:focus {
+.button-blue:focus-visible {
   background-color: var(--main-blue-hover);
 }
 
@@ -74,7 +74,7 @@ button-pagination: text-button-big
   background-color: var(--main-brown);
 }
 
-.button-brown:focus {
+.button-brown:focus-visible {
   background-color: var(--main-brown-hover);
 }
 
@@ -91,7 +91,7 @@ button-pagination: text-button-big
   background-color: var(--main-green);
 }
 
-.button-green:focus {
+.button-green:focus-visible {
   background-color: var(--main-green-hover);
 }
 
@@ -108,7 +108,7 @@ button-pagination: text-button-big
   color: var(--text-secondary-invert);
 }
 
-.button-transparent-invert:focus {
+.button-transparent-invert:focus-visible {
   border: 3px solid;
 }
 
@@ -153,7 +153,7 @@ button-pagination: text-button-big
   color: var(--text-secondary-invert);
 }
 
-.button-pagination-grey:focus {
+.button-pagination-grey:focus-visible {
   background-color: var(--main-blue-hover);
   border: 1px solid var(--main-blue);
 }
@@ -189,7 +189,7 @@ button-pagination: text-button-big
   border: 2px solid var(--icon-primary);
 }
 
-.tab:focus {
+.tab:focus-visible {
   border: 2px solid var(--icon-secondary-hover);
 }
 

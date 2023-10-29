@@ -38,7 +38,7 @@
               </li>
             </ul>
           </div>
-          <ul class="navigation-secondary">
+          <div class="navigation-secondary">
             <ul class="navigation-icons">
               <li class="navigation-menu-item">
                 <a class="navigation-icon" href="#">
@@ -60,10 +60,10 @@
                 </a>
               </li>
             </ul>
-            <li class="navigation-controls">
+            <div class="navigation-controls">
               <button class="button button-400 button-brown text-button-small" type="button">Хочу сюда!</button>
-            </li>
-          </ul>
+            </div>
+          </div>
         </nav>
       </header>
 
@@ -92,7 +92,7 @@
                   </svg>
                 </li>
                 <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
+                  <a class="breadcrumbs-link" href="#">Гостиницы</a>
                 </li>
               </ul>
             </nav>
@@ -186,12 +186,14 @@
 
         <section class="listing">
 
+          <h2 class="visually-hidden">Список гостиниц</h2>
+
           <!--catalog-settings-->
 
           <div class="catalog-settings">
             <p class="catalog-counter heading-2">Найдено гостиниц: 38</p>
             <div class="catalog-sort">
-              <h2 class="visually-hidden">Сортировка и вид отображения</h2>
+              <h3 class="visually-hidden">Сортировка и вид отображения</h3>
               <select class="select" name="catalog-sort-select" id="catalog-sort-select">
                 <option value="expensive-to-cheap">Сначала дорогие</option>
                 <option value="cheap-to-expensive">Сначала дешевые</option>
@@ -228,7 +230,6 @@
           <!--catalog-products-->
 
           <div class="products">
-            <h2 class="visually-hidden">Список гостиниц</h2>
             <ul class="product-list">
 
               <!--product-item-1-->
@@ -416,7 +417,7 @@
           <!--catalog-pagination-->
 
           <div class="pagination">
-            <h2 class="visually-hidden">Навигация по страницам</h2>
+            <h3 class="visually-hidden">Навигация по страницам</h3>
             <ul class="pagination-list text-button-big">
               <li class="pagination-item">
                 <a class="button-pagination button-pagination-grey" href="#">1</a>
@@ -444,7 +445,7 @@
 
         <!--subscribe-->
 
-        <section class="subscribe">
+        <section class="subscribe subscribe-light">
           <div class="title-caption">
             <h2 class="heading-2">Подпишитесь на рассылку</h2>
             <p class="text-basic">Только полезная информация и никакого спама, честное бойскаутское!</p>

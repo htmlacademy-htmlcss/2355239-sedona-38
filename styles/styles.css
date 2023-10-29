@@ -180,8 +180,8 @@ img {
   fill: var(--icon-primary-active);
 }
 
-.navigation-icon:focus .icon {
-  fill: var(--icon-primary-focus);
+.navigation-icon::focus-visible .icon {
+  fill: var(--icon-primary-:focus-visible);
 }
 
 .navigation-counter {
@@ -416,7 +416,7 @@ img {
   opacity: 60%;
 }
 
-.breadcrumbs-link:focus {
+.breadcrumbs-link::focus-visible {
   color: var(--text-primary-invert);
 }
 
@@ -670,8 +670,8 @@ img {
   fill: var(--icon-secondary-active);
 }
 
-.social-button:focus .icon {
-  fill: var(--icon-secondary-focus);
+.social-button::focus-visible .icon {
+  fill: var(--icon-secondary-:focus-visible);
 }
 
 .footer-phone:link { /* телефон */
@@ -690,8 +690,8 @@ img {
   color: var(--text-primary-active);
 }
 
-.footer-phone:focus {
-  color: var(--text-primary-focus);
+.footer-phone::focus-visible {
+  color: var(--text-primary-:focus-visible);
 }
 
 .htmlacademy-logo:link {  /* ссылка на сайт Html academy */
@@ -710,6 +710,6 @@ img {
   fill: var(--icon-primary-active);
 }
 
-.htmlacademy-logo:focus {
-  fill: var(--icon-primary-focus);
+.htmlacademy-logo::focus-visible {
+  fill: var(--icon-primary-:focus-visible);
 }

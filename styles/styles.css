@@ -535,12 +535,6 @@ img {
   padding: 19px;
 }
 
-.product-item-image { /* изображение */
-  width: 100%;
-  height: 212px;
-  object-fit: cover;
-}
-
 .product-item-parameters { /* блок с параметрами */
   display: flex;
   justify-content: space-between;

@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
  box-sizing: border-box;
  transition-duration: 180ms;
 }
@@ -315,13 +315,13 @@ img {
   min-height: 246px;
 }
 
-.promo .title-caption { /* контейнер для текста */
-  max-width: 656px;
-}
-
 .promo-special { /* промоблок под hero */
   min-height: 280px;
   padding-bottom: 37px;
+}
+
+.promo .title-caption { /* контейнер с текстом в промоблоке */
+  max-width: 656px;
 }
 
 .promo-special .title-caption { /* увеличенный гэп для текста */
@@ -336,8 +336,14 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 54px;
-  padding: 96px 304px;
+  min-height: 406px;
+  padding: 16px;
+}
+
+.hotel-search .title-caption {
+  max-width: 656px;
 }
 
 
@@ -348,14 +354,20 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 54px;
-  padding: 96px 258px 104px 258px;
+  min-height: 414px;
+  padding: 16px;
   background-image: url(../images/background/canyon-blur-1.jpg);
   object-fit: cover;
 }
 
 .subscribe .title-caption {
-  padding: 0 104px;
+  max-width: 656px;
+}
+
+.subscribe .title-caption-invert {
+  max-width: 656px;
 }
 
 .subscribe-light { /* контейнер без фона */
@@ -436,7 +448,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 50px 70px;
+  padding: 50px 70px 60px 70px;
 }
 
 
@@ -498,6 +510,7 @@ img {
 
 .product-item-parameters { /* блок с параметрами */
   display: flex;
+  gap: 20px;
   justify-content: space-between;
 }
 
@@ -527,6 +540,7 @@ img {
 
 .rating-star .icon { /* иконка звезды */
   fill: var(--icon-secondary);
+  display: block;
 }
 
 .star-not-active { /* скрытая звезда */
@@ -618,6 +632,10 @@ img {
 
 .footer-phone:focus-visible {
   color: var(--text-primary);
+}
+
+.footer-logo {
+  margin-top: 4px;
 }
 
 .htmlacademy-logo:link {  /* ссылка на сайт Html academy */

@@ -403,12 +403,12 @@ img {
 /* filters */
 
 
-.filter-form { /* обертка всего блока */
+.filter-form { /* блок с фильтрами */
   display: flex;
   justify-content: space-between;
 }
 
-.filter-form-group { /* филдсет */
+.filter-form-group { /* fieldset */
   display: flex;
   flex-direction: column;
   gap: 36px;
@@ -417,13 +417,13 @@ img {
   border: 0;
 }
 
-.filter-form-list { /* список контролов в филдсете */
+.filter-form-list { /* fieldset list */
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.filter-form-title { /* заголовок филдсета */
+.filter-form-title { /* fieldset title */
   margin-bottom: 32px;
   padding: 0;
 }
@@ -656,4 +656,60 @@ img {
 
 .htmlacademy-logo:focus-visible {
   fill: var(--icon-primary);
+}
+
+
+/* modal */
+
+
+.modal-container { /* окно с бекдропом */
+ position: fixed;
+ top: 0;
+ left: 0;
+ display: flex;
+ width: 100%;
+ height: 100%;
+ background-color: var(--backdrop);
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.modal {
+  position: relative;
+  width: 716px;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: var(--main-primary);
+  border-radius: 30px;
+}
+
+
+
+
+
+/* icon-info */
+
+
+.icon-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background-color: var(--icon-secondary);
+  border-radius: 50%;
+}
+
+.icon-info:hover {
+  background-color: var(--icon-secondary-hover);
+}
+
+.icon-info:focus-visible {
+  background-color: var(--icon-secondary-hover);
+}
+
+.icon-info .icon {
+  fill: var(--icon-primary-invert);
 }

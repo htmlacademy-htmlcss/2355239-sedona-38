@@ -47,6 +47,8 @@
   --icon-secondary-active:rgb(104 162 202);
   --icon-secondary-focus:rgb(104 162 202);
 
+  --icon-primary-invert: rgb(229 229 229);
+
   /* forms */
 
   --forms-input:rgb(63 94 114);
@@ -56,4 +58,5 @@
   /* extra */
 
   --focus: rgb(131 179 211);
+  --backdrop: rgb(242 242 242 / 0.8);
 }

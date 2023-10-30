@@ -1,4 +1,4 @@
-/* input */
+/* button */
 
 
 /*
@@ -110,6 +110,25 @@ button-pagination: text-button-big
 
 .button-transparent-invert:focus-visible {
   border: 3px solid;
+}
+
+.modal-close-button { /* кнопка закрытия */
+  position: absolute;
+  top: 64px;
+  right: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  background-color: var(--main-gray);
+  border: none;
+  border-radius: 50%;
+}
+
+.modal-close-button .icon {
+  fill: var(--icon-primary);
 }
 
 

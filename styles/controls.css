@@ -176,12 +176,12 @@ button-pagination: text-button-big
   color: var(--text-primary-invert);
 }
 
-.breadcrumbs-link:hover {
+.breadcrumbs-link:not(:last-child):hover {
   color: var(--text-primary-invert);
   opacity: 60%;
 }
 
-.breadcrumbs-link:active {
+.breadcrumbs-lin:not(:last-child):active {
   color: var(--text-primary-invert);
   opacity: 60%;
 }

@@ -58,6 +58,10 @@ img {
   padding: 0 70px;
 }
 
+.grid-cell-right-align { /* выравнивает контент ячейки по правому краю */
+  justify-self: right;
+}
+
 
 /* title-caption - заголовок + подпись */
 
@@ -375,6 +379,11 @@ img {
   background-color: var(--main-primary);
 }
 
+.subscribe-form {
+  display: flex;
+  gap: 0;
+}
+
 .subscribe .button {
   border-radius:  0 4px 4px 0;
 }
@@ -547,7 +556,7 @@ img {
   display: none;
 }
 
-.rating-value { /* блок с рейтингом */
+.rating-value { /* звезды и рейтинг */
   width: 100%;
   padding: 8px 0;
   text-align: center;
@@ -663,20 +672,16 @@ img {
 
 
 .modal-container { /* окно с бекдропом */
- position: fixed;
- top: 0;
- left: 0;
- display: flex;
- width: 100%;
- height: 100%;
- background-color: var(--backdrop);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: var(--backdrop);
 }
 
-.modal-container-close {
-  display: none;
-}
-
-.modal {
+.modal { /* диалоговое окно */
   position: relative;
   width: 716px;
   margin: auto;
@@ -684,6 +689,59 @@ img {
   background-color: var(--main-primary);
   border-radius: 30px;
 }
+
+.modal-container-close { /* класс, скрывающий окно */
+  display: none;
+}
+
+
+/* modal form */
+
+
+.modal header { /* шапка модального окна */
+  margin-bottom: 64px;
+}
+
+.modal-footer { /* футер модального окна */
+  margin-top: 48px;
+}
+
+.modal-footer .button { /* CTA в футере */
+  width: 100%;
+}
+
+.hotel-search-form-fields { /* сетка полей */
+  display: grid;
+  grid-template-columns: 138px 110px 1fr 110px;
+  grid-template-rows: repeat(3, auto);
+  align-items: baseline;
+  justify-items: stretch;
+  row-gap: 24px;
+}
+
+.hotel-search-form-fields .fill-field { /* поля тянутся на несколько колонок */
+  grid-column: 2/5;
+}
+
+.label-info { /* лейбл + иконка инфо */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -702,14 +760,17 @@ img {
   border-radius: 50%;
 }
 
-.icon-info:hover {
-  background-color: var(--icon-secondary-hover);
-}
-
+.icon-info:hover,
 .icon-info:focus-visible {
   background-color: var(--icon-secondary-hover);
+
 }
 
 .icon-info .icon {
   fill: var(--icon-primary-invert);
+}
+
+
+.form-label .icon-info {
+  margin-right: 28px;
 }

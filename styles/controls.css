@@ -3,7 +3,7 @@
 
 /*
 Текстовые стили
-button-600: heading-4
+button-600: text-button-big
 button-500: text-button-big
 button-400: text-button-small
 button-pagination: text-button-big
@@ -19,18 +19,8 @@ button-pagination: text-button-big
   color: var(--text-secondary-invert);
 }
 
-.button-invert {  /* кнопка со светлым фоном и темным текстом */
-  text-align: center;
-  color: var(--text-primary);
-  border: 0;
-}
-
-.button-invert:active { /* текст светлеет при нажатии */
-  color: var(--text-primary-invert);
-}
-
 .button-600 { /* размер большой */
-  padding: 18px 50px;
+  padding: 12px 50px;
   border-radius: 10px;
 }
 
@@ -112,7 +102,7 @@ button-pagination: text-button-big
   border: 3px solid;
 }
 
-.modal-close-button { /* кнопка закрытия */
+.modal-close-button { /* кнопка закрытия модального окна */
   position: absolute;
   top: 64px;
   right: 52px;
@@ -153,7 +143,7 @@ button-pagination: text-button-big
   background-color: var(--main-gray);
 }
 
-.button-pagination-white { /* стиль серый */
+.button-pagination-white { /* стиль белый */
   background-color: var(--main-primary);
 }
 
@@ -167,12 +157,12 @@ button-pagination: text-button-big
   border: 1px solid var(--main-blue);
 }
 
-.button-pagination-grey:active {
+.button-pagination-blue:active {
   background-color: var(--main-blue);
   color: var(--text-secondary-invert);
 }
 
-.button-pagination-grey:focus-visible {
+.button-pagination-blue:focus-visible {
   background-color: var(--main-blue-hover);
   border: 1px solid var(--main-blue);
 }
@@ -219,10 +209,35 @@ button-pagination: text-button-big
 }
 
 
+
+
+
+.selector { /* иконка */
+  content: '';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  padding: 3px;
+  margin-right: 28px;
+  background-image: url(../images/vector/Icons/arrow.svg);
+  background-color: var(--icon-secondary);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  fill: var(--icon-primary-invert);
+}
+
+
+
+
+
+
 /* tabs */
 
 
-.tab {
+.tab { /* неактивный пункт */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -245,7 +260,7 @@ button-pagination: text-button-big
   border: 2px solid var(--icon-secondary-hover);
 }
 
-.tab-current {
+.tab-current { /* активный пункт */
   border: 2px solid var(--icon-primary);
 }
 
@@ -272,4 +287,38 @@ button-pagination: text-button-big
   height: 20px;
   margin: 0 16px 0 0;
   background-color: var(--main-primary);
+}
+
+
+/* input field */
+
+
+/*
+Текстовые стили
+filled: text-input
+*/
+
+
+.input-field {
+  padding: 12px 20px;
+  background-color: var(--main-gray);
+  border: none;
+  border-radius: 4px;
+}
+
+.input-field:hover,
+.input-field:focus-visible {
+  background-color: var(--main-gray-hover);
+}
+
+.subscribe-email-field {
+  padding: 14px 20px;
+  background-color: var(--main-gray);
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.subscribe-email-field:hover,
+.subscribe-email-field:focus-visible {
+  background-color: var(--main-gray-hover);
 }

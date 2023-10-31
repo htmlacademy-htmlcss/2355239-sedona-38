@@ -41,13 +41,14 @@
   --icon-primary-hover:rgb(117 97 87);
   --icon-primary-active:rgb(117 97 87 / 0.3);
   --icon-primary-focus:rgb(117 97 87);
+  --icon-tertiary: rgb(0 0 0 / 0.3);
 
   --icon-secondary:rgb(131 179 211);
   --icon-secondary-hover:rgb(104 162 202);
   --icon-secondary-active:rgb(104 162 202);
   --icon-secondary-focus:rgb(104 162 202);
 
-  --icon-primary-invert: rgb(229 229 229);
+  --icon-primary-invert: rgb(255 255 255);
 
   /* forms */
 

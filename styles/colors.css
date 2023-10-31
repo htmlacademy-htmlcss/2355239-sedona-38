@@ -1,0 +1,62 @@
+:root{
+
+  /* main */
+
+  --main-primary: rgb(255 255 255);
+  --main-secondary: rgb(230 230 230);
+  --main-light:rgb(131 179 211 / 0.2);
+  --main-extra-light:rgb(131 179 211 / 0.12);
+
+  --main-brown:rgb(117 97 87);
+  --main-brown-hover: rgb(97 80 72);
+
+  --main-blue:rgb(130 179 211);
+  --main-blue-hover:rgb(104 162 202);
+
+  --main-green:rgb(125 181 79);
+  --main-green-hover:rgba(108 158 66);
+
+  --main-gray: rgb(242 242 242);
+  --main-gray-hover: rgb(230 230 230);
+
+  --main-disabled: rgb(229 229 229);
+
+  /* text */
+
+  --text-primary:rgb(0 0 0);
+  --text-secondary:rgb(51 51 51);
+
+  --text-primary-invert:rgb(255 255 255);
+  --text-secondary-invert:rgb(255 255 255 / 0.3);
+
+  --text-primary-hover:rgb(117 97 87);
+  --text-primary-active:rgb(117 97 87 / 0.3);
+  --text-primary-focus:rgb(117 97 87);
+
+  --text-error:rgb(255 87 87);
+
+  /* icon */
+
+  --icon-primary:rgb(0 0 0);
+  --icon-primary-hover:rgb(117 97 87);
+  --icon-primary-active:rgb(117 97 87 / 0.3);
+  --icon-primary-focus:rgb(117 97 87);
+
+  --icon-secondary:rgb(131 179 211);
+  --icon-secondary-hover:rgb(104 162 202);
+  --icon-secondary-active:rgb(104 162 202);
+  --icon-secondary-focus:rgb(104 162 202);
+
+  --icon-primary-invert: rgb(229 229 229);
+
+  /* forms */
+
+  --forms-input:rgb(63 94 114);
+  --forms-elements-1:rgb(229 229 229);
+  --forms-elements-2:rgb(242 242 242);
+
+  /* extra */
+
+  --focus: rgb(131 179 211);
+  --backdrop: rgb(242 242 242 / 0.8);
+}

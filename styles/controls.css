@@ -1,0 +1,275 @@
+/* button */
+
+
+/*
+Текстовые стили
+button-600: heading-4
+button-500: text-button-big
+button-400: text-button-small
+button-pagination: text-button-big
+*/
+
+.button {  /* кнопка, базовые параметры */
+  text-align: center;
+  color: var(--text-primary-invert);
+  border: 0;
+}
+
+.button:active { /* текст светлеет при нажатии */
+  color: var(--text-secondary-invert);
+}
+
+.button-invert {  /* кнопка со светлым фоном и темным текстом */
+  text-align: center;
+  color: var(--text-primary);
+  border: 0;
+}
+
+.button-invert:active { /* текст светлеет при нажатии */
+  color: var(--text-primary-invert);
+}
+
+.button-600 { /* размер большой */
+  padding: 18px 50px;
+  border-radius: 10px;
+}
+
+.button-500 {  /* размер средний */
+  padding: 8px 50px;
+  border-radius: 4px;
+}
+
+.button-400 {  /* размер маленький */
+  padding: 8px 34px;
+  border-radius: 4px;
+}
+
+.button-blue { /* стиль голубой */
+  background-color: var(--main-blue);
+}
+
+.button-blue:hover {
+  background-color: var(--main-blue-hover);
+  cursor: pointer;
+}
+
+.button-blue:active {
+  background-color: var(--main-blue);
+}
+
+.button-blue:focus-visible {
+  background-color: var(--main-blue-hover);
+}
+
+.button-brown { /* стиль коричневый */
+  background-color: var(--main-brown);
+}
+
+.button-brown:hover {
+  background-color: var(--main-brown-hover);
+  cursor: pointer;
+}
+
+.button-brown:active {
+  background-color: var(--main-brown);
+}
+
+.button-brown:focus-visible {
+  background-color: var(--main-brown-hover);
+}
+
+.button-green { /* стиль зеленый */
+  background-color: var(--main-green);
+}
+
+.button-green:hover {
+  background-color: var(--main-green-hover);
+  cursor: pointer;
+}
+
+.button-green:active {
+  background-color: var(--main-green);
+}
+
+.button-green:focus-visible {
+  background-color: var(--main-green-hover);
+}
+
+.button-transparent-invert { /* стиль прозрачный */
+  background-color: transparent;
+}
+
+.button-transparent-invert:hover {
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.button-transparent-invert:active {
+  color: var(--text-secondary-invert);
+}
+
+.button-transparent-invert:focus-visible {
+  border: 3px solid;
+}
+
+.modal-close-button { /* кнопка закрытия */
+  position: absolute;
+  top: 64px;
+  right: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  background-color: var(--main-gray);
+  border: none;
+  border-radius: 50%;
+}
+
+.modal-close-button .icon {
+  fill: var(--icon-primary);
+}
+
+
+/* pagination */
+
+
+.button-pagination { /* размер для пагинации */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  color: var(--text-primary);
+  border-radius: 4px;
+}
+
+.button-pagination:hover {
+  cursor: pointer;
+}
+
+.button-pagination-grey { /* стиль серый */
+  background-color: var(--main-gray);
+}
+
+.button-pagination-white { /* стиль серый */
+  background-color: var(--main-primary);
+}
+
+.button-pagination-blue { /* стиль голубой */
+  color: var(--text-primary-invert);
+  background-color: var(--main-blue);
+}
+
+.button-pagination-blue:hover {
+  background-color: var(--main-blue-hover);
+  border: 1px solid var(--main-blue);
+}
+
+.button-pagination-grey:active {
+  background-color: var(--main-blue);
+  color: var(--text-secondary-invert);
+}
+
+.button-pagination-grey:focus-visible {
+  background-color: var(--main-blue-hover);
+  border: 1px solid var(--main-blue);
+}
+
+
+/* breadcrumbs */
+
+
+.breadcrumbs { /* контейнер с крошками */
+  display: flex;
+  align-items: center;
+  height: 22px;
+}
+
+.breadcrumbs-link:link { /* ссылка */
+  color: var(--text-primary-invert);
+}
+
+.breadcrumbs-link:visited {
+  color: var(--text-primary-invert);
+}
+
+.breadcrumbs-link:not(:last-child):hover {
+  color: var(--text-primary-invert);
+  opacity: 60%;
+}
+
+.breadcrumbs-lin:not(:last-child):active {
+  color: var(--text-primary-invert);
+  opacity: 60%;
+}
+
+.breadcrumbs-link:focus-visible {
+  color: var(--text-primary-invert);
+}
+
+.breadcrumbs-icon { /* иконки в крошках */
+  display: flex;
+  fill: var(--text-primary-invert);
+}
+
+.breadcrumbs-arrow { /* стрелка */
+  margin-right: 4px;
+}
+
+
+/* tabs */
+
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: var(--main-primary);
+  border: 2px solid var(--forms-elements-1);
+  border-radius: 4px;
+}
+
+.tab:hover {
+  border: 2px solid var(--icon-primary);
+}
+
+.tab:active {
+  border: 2px solid var(--icon-primary);
+}
+
+.tab:focus-visible {
+  border: 2px solid var(--icon-secondary-hover);
+}
+
+.tab-current {
+  border: 2px solid var(--icon-primary);
+}
+
+
+/* checkbox */
+
+
+.control { /* input+label */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.control:hover {
+  opacity: 60%;
+}
+
+.control:active {
+  opacity: 30%;
+}
+
+.control-input { /* сам контрол */
+  width: 20px;
+  height: 20px;
+  margin: 0 16px 0 0;
+  background-color: var(--main-primary);
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/controls.css">
+    <link rel="stylesheet" href="styles/colors.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+  </head>
+  <body>
+
+
+    <!-- добавить класс modal-container-close, чтобы скрыть окно  -->
+
+
+    <div class="modal-container">
+      <div class="modal">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Кнопка закрытия окна</span>
+          <svg class="icon" width="20" height="20">
+            <use xlink:href="images/sprite.svg#cross"></use>
+          </svg>
+        </button>
+        <section class="modal-content">
+          <h2 class="heading-2">
+            Поиск гостиницы в Седоне
+          </h2>
+          <form class="hotel-search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="form-label-field">
+              Дата заезда:
+              <input class="input-field" id="hotel-search-form-check-in-date" type="datetime" name="check-in-date">
+            </label>
+            <label class="form-label-field">
+              Дата выезда:
+              <input class="input-field" id="hotel-search-form-check-out-date" type="datetime" name="check-out-date">
+            </label>
+            <div class="counter-fields">
+              <label class="form-label-field">
+                Взрослые:
+                <input class="input-field" id="hotel-search-form-adult-counter-field" type="number" name="adult-counter-field" value="2" step="1" min="0">
+              </label>
+              <div class="label-input">
+                <div class="label-info">
+                  <label class="form-label-field" for="hotel-search-form-children-counter-field">
+                    Дети:
+                  </label>
+                  <div class="icon-info">
+                    <span class="visually-hidden">Иконка дополнительной информации</span>
+                    <svg class="icon" width="20" height="20">
+                      <use xlink:href="images/sprite.svg#info"></use>
+                    </svg>
+                  </div>
+                </div>
+                <input class="input-field" id="hotel-search-form-children-counter-field" type="number" name="children-counter-field" value="2" step="1" min="0">
+              </div>
+            </div>
+            <button class="button button-600 button-blue heading-4" type="submit">
+              Найти
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

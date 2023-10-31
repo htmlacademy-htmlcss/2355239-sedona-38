@@ -1,0 +1,715 @@
+*, *::before, *::after {
+ box-sizing: border-box;
+ transition-duration: 180ms;
+}
+
+body {
+  margin: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--text-primary);
+  background-color: var(--main-gray);
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
+.page-content-container {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  background-color: var(--main-primary);
+  box-shadow: rgb(0 0 0 / 0.2) 0 0 15px 0;
+}
+
+.icon {
+  fill: var(--icon-primary);
+}
+
+.container {
+  padding: 0 70px;
+}
+
+
+/* title-caption - заголовок + подпись */
+
+
+.title-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.title-caption .text-basic {
+  color: var(--text-secondary);
+}
+
+.title-caption-invert {
+  color: var(--text-primary-invert);
+}
+
+.title-caption-invert .text-basic {
+  color: var(--text-primary-invert);
+}
+
+
+/* page-header */
+
+
+.page-header {
+  height: 64px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.navigation-primary { /* navigation-primary */
+  display: flex;
+  gap: 30px;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-link:link {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 20px 16px 0 16px;
+  color: var(--text-primary);
+}
+
+.navigation-link:visited {
+  color: var(--text-primary);
+}
+
+.navigation-link:hover {
+  color: var(--text-primary-hover);
+}
+
+.navigation-link:active {
+  color: var(--text-primary-hover);
+}
+
+.default::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: none;
+}
+
+.active::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-primary-hover);
+}
+
+.navigation-secondary { /* navigation-secondary */
+  display: flex;
+  gap: 20px;
+}
+
+.navigation-icons {
+  display: flex;
+}
+
+.navigation-menu-item {
+  position: relative;
+}
+
+.navigation-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 64px;
+}
+
+.navigation-icon:link .icon {
+  fill: var(--icon-primary);
+}
+
+.navigation-icon:visited .icon {
+  fill: var(--icon-primary);
+}
+
+.navigation-icon:hover .icon {
+  fill: var(--icon-primary-hover);
+}
+
+.navigation-icon:active .icon {
+  fill: var(--icon-primary-active);
+}
+
+.navigation-icon:focus-visible .icon {
+  fill: var(--icon-primary);
+}
+
+.navigation-counter {
+  position: absolute;
+  top: 11px;
+  right: 4px;
+  padding: 5px;
+  color: var(--text-primary-invert);
+  background-color: var(--main-green);
+  border-radius: 10px;
+}
+
+.navigation-controls {
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+
+
+/* hero */
+
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 51px 0 82px 0;
+  background-image: url(../images/background/hero-image.jpg);
+  object-fit: cover;
+  clip-path: polygon(100% 0, 100% 88%, 79% 93%, 79% 88%, 50% 100%, 21% 88%, 21% 93%, 0 88%, 0 0);
+}
+
+.hero-image {
+  width: 458px;
+}
+
+
+/* advantages */
+
+
+.advantages-grid { /* первая сетка с преимуществами */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 385px);
+}
+
+.advantages-second-grid { /* вторая сетка с преимуществами */
+  grid-template-rows: 385px;
+}
+
+.advantages-wrapper { /* обертка базовая белая */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 85px;
+  text-align: center;
+  color: var(--text-primary);
+  background-color: var(--main-primary);
+}
+
+.wrapper-grey { /* цвет обертки серый */
+  background-color: var(--main-light);
+}
+
+.wrapper-light-grey { /* цвет обертки светло-серый */
+  background-color: var(--main-extra-light);
+}
+
+.wrapper-blue { /* цвет обертки голубой */
+  color: var(--text-primary-invert);
+  background-color: var(--main-blue);
+}
+
+.advantages-wrapper .text-blocks { /* цвет подписи */
+  color: var(--text-secondary);
+}
+
+.wrapper-blue .text-blocks { /* цвет подписи голубой обертки */
+  color: var(--text-primary-invert);
+}
+
+.advantages h3 { /* заголовок + разделитель */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 0 28px;
+}
+
+.advantages-first-grid h3::after { /* разделитель */
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: currentColor;
+  opacity: 30%;
+}
+
+.advantages-wrapper .icon { /* иконка */
+  fill: var(--icon-secondary);
+}
+
+.advantages-image {
+  padding: 0;
+}
+
+.first-advantages-image {
+  grid-column: 2/4;
+  background-image: url(../images/background/sedona-house.jpg);
+}
+
+.second-advantages-image {
+  grid-column: 1/3;
+  background-image: url(../images/background/canyon.jpg);
+}
+
+.advantages-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* promo */
+
+
+.promo { /* промо-заголовок + описание */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  min-height: 246px;
+}
+
+.promo-special { /* промоблок под hero */
+  min-height: 280px;
+  padding-bottom: 37px;
+}
+
+.promo .title-caption { /* контейнер с текстом в промоблоке */
+  max-width: 656px;
+}
+
+.promo-special .title-caption { /* увеличенный гэп для текста */
+  gap: 25px;
+}
+
+
+/* hotel-search */
+
+
+.hotel-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 54px;
+  min-height: 406px;
+  padding: 16px;
+}
+
+.hotel-search .title-caption {
+  max-width: 656px;
+}
+
+
+/* subscribe */
+
+
+.subscribe { /* контейнер */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 54px;
+  min-height: 414px;
+  padding: 16px;
+  background-image: url(../images/background/canyon-blur-1.jpg);
+  object-fit: cover;
+}
+
+.subscribe .title-caption {
+  max-width: 656px;
+}
+
+.subscribe .title-caption-invert {
+  max-width: 656px;
+}
+
+.subscribe-light { /* контейнер без фона */
+  background-image: none;
+  background-color: var(--main-primary);
+}
+
+.subscribe .button {
+  border-radius:  0 4px 4px 0;
+}
+
+
+/* inner-header */
+
+
+.catalog-header {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 35px 70px 70px;
+  color: var(--text-primary-invert);
+  background-image: url(../images/background/canyon-blur-2.jpg);
+  background-size: cover;
+}
+
+.inner-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+/* filters */
+
+
+.filter-form { /* блок с фильтрами */
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-form-group { /* fieldset */
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.filter-form-list { /* fieldset list */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.filter-form-title { /* fieldset title */
+  margin-bottom: 32px;
+  padding: 0;
+}
+
+
+/* filter-controls */
+
+
+.filter-form-controls { /* контрол в филдсете */
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 191px;
+  padding-top: 56px;
+}
+
+
+/* listing */
+
+
+.listing { /* настройка отображения + плитки + пагинация */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 50px 70px 60px 70px;
+}
+
+
+/* catalog-settings */
+
+
+.catalog-settings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalog-sort {
+  display: flex;
+  gap: 70px;
+}
+.catalog-view-list {
+  display: flex;
+  gap: 8px;
+}
+
+
+/* catalog-products */
+
+
+.products { /* сетка карточек + разделитель */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.product-list { /* сетка карточек */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+}
+
+.products::after { /* разделитель под выдачей */
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: var(--main-secondary);
+}
+
+
+/* product-item */
+
+
+.product-item { /* карточка */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 19px;
+  background-color: var(--main-primary);
+  border: 1px solid var(--main-secondary);
+  border-radius: 4px;
+}
+
+.product-item-parameters { /* блок с параметрами */
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.product-item-actions { /* кнопки */
+  display: flex;
+  gap: 20px;
+}
+
+.product-item-actions .button {
+  width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.rating { /* звезды + рейтинг */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.rating-star-list { /* список звезд */
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+}
+
+.rating-star .icon { /* иконка звезды */
+  fill: var(--icon-secondary);
+  display: block;
+}
+
+.star-not-active { /* скрытая звезда */
+  display: none;
+}
+
+.rating-value { /* блок с рейтингом */
+  width: 100%;
+  padding: 8px 0;
+  text-align: center;
+  background-color: var(--main-gray);
+  border-radius: 4px;
+}
+
+
+/* catalog-pagination */
+
+
+.pagination-list {
+  display: flex;
+  gap: 8px;
+}
+
+
+/* footer */
+
+
+.page-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px 70px 35px 70px;
+}
+
+.social-list {
+  display: flex;
+  width: 142px;
+  height: 40px;
+}
+
+.social-item {
+  width: 100%;
+  height: 100%;
+}
+
+.social-button { /* контейнер с иконкой соц. сети */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.social-button:link .icon { /* ссылка на соц. сеть */
+  fill: var(--icon-secondary);
+}
+
+.social-button:visited .icon {
+  fill: var(--icon-secondary);
+}
+
+.social-button:hover .icon {
+  fill: var(--icon-secondary-hover);
+}
+
+.social-button:active .icon {
+  fill: var(--icon-secondary-active);
+}
+
+.social-button:focus-visible .icon {
+  fill: var(--icon-secondary);
+}
+
+.footer-phone:link { /* телефон */
+  color: var(--text-primary);
+}
+
+.footer-phone:visited {
+  color: var(--text-primary);
+}
+
+.footer-phone:hover {
+  color: var(--text-primary-hover);
+}
+
+.footer-phone:active {
+  color: var(--text-primary-active);
+}
+
+.footer-phone:focus-visible {
+  color: var(--text-primary);
+}
+
+.footer-logo {
+  margin-top: 4px;
+}
+
+.htmlacademy-logo:link {  /* ссылка на сайт Html academy */
+  fill: var(--icon-primary);
+}
+
+.htmlacademy-logo:visited {
+  fill: var(--icon-primary);
+}
+
+.htmlacademy-logo:hover {
+  fill: var(--icon-primary-hover);
+}
+
+.htmlacademy-logo:active {
+  fill: var(--icon-primary-active);
+}
+
+.htmlacademy-logo:focus-visible {
+  fill: var(--icon-primary);
+}
+
+
+/* modal */
+
+
+.modal-container { /* окно с бекдропом */
+ position: fixed;
+ top: 0;
+ left: 0;
+ display: flex;
+ width: 100%;
+ height: 100%;
+ background-color: var(--backdrop);
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.modal {
+  position: relative;
+  width: 716px;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: var(--main-primary);
+  border-radius: 30px;
+}
+
+
+
+
+
+/* icon-info */
+
+
+.icon-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background-color: var(--icon-secondary);
+  border-radius: 50%;
+}
+
+.icon-info:hover {
+  background-color: var(--icon-secondary-hover);
+}
+
+.icon-info:focus-visible {
+  background-color: var(--icon-secondary-hover);
+}
+
+.icon-info .icon {
+  fill: var(--icon-primary-invert);
+}

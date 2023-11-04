@@ -821,14 +821,14 @@ input[type=range]::-moz-range-thumb {
 
 .tooltip-description { /* подсказка */
   position: absolute;
+  top: 100%;
+  left: 50%;
   width: 256px;
-  padding: 18px 18px 24px 22px;
   margin-top: 15px;
+  padding: 18px 18px 24px 22px;
   color: var(--text-primary-invert);
   background-color: var(--main-dark);
   border-radius: 10px;
-  top: 100%;
-  left: 50%;
   transform: translateX(-50%);
   z-index: 1;
 }
@@ -842,11 +842,11 @@ input[type=range]::-moz-range-thumb {
 
 .tooltip-description::before {
   content: '';
-  background-image: url(../images/vector/icons/tooltip-triangle.svg);
-  width: 20px;
-  height: 9px;
   position: absolute;
   top: -9px;
   left: 50%;
+  width: 20px;
+  height: 9px;
+  background-image: url(../images/vector/icons/tooltip-triangle.svg);
   transform: translateX(-50%);
 }

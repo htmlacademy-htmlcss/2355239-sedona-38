@@ -43,9 +43,12 @@ img {
 }
 
 .page-content-container {
+  position: relative;
   width: 1200px;
   height: auto;
+  min-height: 100vh;
   margin: auto;
+  padding-bottom: 120px;
   background-color: var(--main-primary);
   box-shadow: rgb(0 0 0 / 0.2) 0 0 15px 0;
 }
@@ -655,9 +658,12 @@ img {
 
 
 .page-footer {
+  position: absolute;
+  bottom: 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   padding: 45px 70px 35px 70px;
 }
 
@@ -724,8 +730,12 @@ img {
   margin-top: 4px;
 }
 
+.footer-logo .icon {
+  display: flex;
+}
+
 .htmlacademy-logo:link {  /* ссылка на сайт Html academy */
-  fill: var(--icon-primary);
+  display: flex;
 }
 
 .htmlacademy-logo:visited {

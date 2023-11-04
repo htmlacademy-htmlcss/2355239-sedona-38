@@ -15,92 +15,137 @@ button-pagination: text-button-big
   border: 0;
 }
 
-.button:active { /* текст светлеет при нажатии */
-  color: var(--text-secondary-invert);
-}
-
 .button-600 { /* размер большой */
-  padding: 12px 50px;
+  padding: 9px 47px;
   border-radius: 10px;
 }
 
 .button-500 {  /* размер средний */
-  padding: 8px 50px;
+  padding: 5px 47px;
   border-radius: 4px;
 }
 
 .button-400 {  /* размер маленький */
-  padding: 8px 34px;
+  padding: 5px 33px;
   border-radius: 4px;
+}
+
+.button:active { /* текст светлеет при нажатии */
+  color: var(--text-secondary-invert);
+  border: 3px solid transparent;
 }
 
 .button-blue { /* стиль голубой */
   background-color: var(--main-blue);
+  border: 3px solid transparent;
 }
 
 .button-blue:hover {
   background-color: var(--main-blue-hover);
+  border: 3px solid transparent;
   cursor: pointer;
 }
 
 .button-blue:active {
   background-color: var(--main-blue);
+  border: 3px solid transparent;
+}
+
+.button-blue:focus {
+  background-color: var(--main-blue-hover);
+  border: 3px solid transparent;
+  outline: none;
 }
 
 .button-blue:focus-visible {
   background-color: var(--main-blue-hover);
+  border: 3px solid transparent;
+  outline: none;
 }
 
 .button-brown { /* стиль коричневый */
   background-color: var(--main-brown);
+  border: 3px solid transparent;
 }
 
 .button-brown:hover {
   background-color: var(--main-brown-hover);
+  border: 3px solid transparent;
   cursor: pointer;
 }
 
 .button-brown:active {
   background-color: var(--main-brown);
+  border: 3px solid transparent;
+}
+
+.button-brown:focus {
+  background-color: var(--main-brown-hover);
+  border: 3px solid transparent;
+  outline: none;
 }
 
 .button-brown:focus-visible {
   background-color: var(--main-brown-hover);
+  border: 3px solid transparent;
+  outline: none;
 }
 
 .button-green { /* стиль зеленый */
   background-color: var(--main-green);
+  border: 3px solid transparent;
 }
 
 .button-green:hover {
   background-color: var(--main-green-hover);
+  border: 3px solid transparent;
   cursor: pointer;
 }
 
 .button-green:active {
   background-color: var(--main-green);
+  border: 3px solid transparent;
 }
+
+.button-green:focus {
+  background-color: var(--main-green-hover);
+  border: 3px solid transparent;
+  outline: none;}
 
 .button-green:focus-visible {
   background-color: var(--main-green-hover);
-}
+  border: 3px solid transparent;
+  outline: none;}
 
 .button-transparent-invert { /* стиль прозрачный */
   background-color: transparent;
+  border: 3px solid transparent;
 }
 
 .button-transparent-invert:hover {
   opacity: 60%;
+  border: 3px solid transparent;
   cursor: pointer;
 }
 
 .button-transparent-invert:active {
   color: var(--text-secondary-invert);
+  border: 3px solid transparent;
+}
+
+.button-transparent-invert:focus {
+  border: 3px solid transparent;
+  outline: none;
 }
 
 .button-transparent-invert:focus-visible {
-  border: 3px solid;
+  border: 3px solid var(--main-blue);
+  outline: none;
 }
+
+
+/* modal-close-button */
+
 
 .modal-close-button { /* кнопка закрытия модального окна */
   position: absolute;
@@ -113,8 +158,30 @@ button-pagination: text-button-big
   height: 52px;
   padding: 0;
   background-color: var(--main-gray);
-  border: none;
+  border: 3px solid transparent;
   border-radius: 50%;
+}
+
+.modal-close-button:hover {
+  background-color: var(--main-gray-hover);
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+
+.modal-close-button:focus {
+  background-color: var(--main-gray-hover);
+  border: 3px solid transparent;
+  outline: none;
+}
+
+.modal-close-button:focus-visible {
+  background-color: var(--main-gray-hover);
+  border: 3px solid var(--main-blue);
+  outline: none;
+}
+
+.modal-close-button:active .icon {
+  opacity: 30%;
 }
 
 .modal-close-button .icon {
@@ -132,7 +199,9 @@ button-pagination: text-button-big
   width: 60px;
   height: 60px;
   color: var(--text-primary);
+  border: 1px solid transparent;
   border-radius: 4px;
+  outline: none;
 }
 
 .button-pagination:hover {
@@ -174,24 +243,34 @@ button-pagination: text-button-big
 .breadcrumbs { /* контейнер с крошками */
   display: flex;
   align-items: center;
+  gap: 10px;
   height: 22px;
+  margin-left: -2px;
 }
 
-.breadcrumbs-link:link { /* ссылка */
+.breadcrumbs-link:link { /* ссылка-текст */
+  display: flex;
+  align-items: center;
+  gap: 6px;
   color: var(--text-primary-invert);
 }
 
-.breadcrumbs-link:visited {
+.breadcrumbs-icon { /* ссылка-иконка */
+  display: flex;
+  fill: var(--text-primary-invert);
+}
+
+.breadcrumbs-link:visited { /* посещенная ссылка */
   color: var(--text-primary-invert);
 }
 
-.breadcrumbs-link:not(:last-child):hover {
-  color: var(--text-primary-invert);
+.breadcrumbs-item:not(:last-child) .breadcrumbs-page-name:hover, /* ссылка (иконка или текст) при наведении */
+.breadcrumbs-item:not(:last-child) .breadcrumbs-icon:hover {
   opacity: 60%;
 }
 
-.breadcrumbs-lin:not(:last-child):active {
-  color: var(--text-primary-invert);
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link:active, /* ссылка (иконка или текст) при нажатии */
+.breadcrumbs-item:not(:last-child) .breadcrumbs-icon:active {
   opacity: 60%;
 }
 
@@ -199,39 +278,27 @@ button-pagination: text-button-big
   color: var(--text-primary-invert);
 }
 
-.breadcrumbs-icon { /* иконки в крошках */
-  display: flex;
-  fill: var(--text-primary-invert);
-}
-
-.breadcrumbs-arrow { /* стрелка */
-  margin-right: 4px;
-}
-
-
-
-
-
-.selector { /* иконка */
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link::after { /* стрелка вправо после ссылки */
   content: '';
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 26px;
-  height: 26px;
-  padding: 3px;
-  margin-right: 28px;
-  background-image: url(../images/vector/Icons/arrow.svg);
-  background-color: var(--icon-secondary);
+  width: 8px;
+  height: 20px;
+  background-image: url(../images/vector/icons/arrow.svg);
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 50%;
   fill: var(--icon-primary-invert);
+  cursor: default;
 }
 
+.breadcrumbs-page-name { /* выравнивает текст отноистельно иконок */
+  margin-bottom: 1px;
+}
 
-
-
+.breadcrumbs-item:last-child .breadcrumbs-link:hover { /* последняя ссылка c курсоровм стрелкой */
+  cursor: default;
+}
 
 
 /* tabs */
@@ -244,7 +311,7 @@ button-pagination: text-button-big
   width: 48px;
   height: 48px;
   background-color: var(--main-primary);
-  border: 2px solid var(--forms-elements-1);
+  border: 2px solid var(--main-disabled);
   border-radius: 4px;
 }
 
@@ -256,8 +323,14 @@ button-pagination: text-button-big
   border: 2px solid var(--icon-primary);
 }
 
+.tab:focus {
+  border: 2px solid var(--icon-primary);
+  outline: none;
+}
+
 .tab:focus-visible {
   border: 2px solid var(--icon-secondary-hover);
+  outline: none;
 }
 
 .tab-current { /* активный пункт */
@@ -265,12 +338,18 @@ button-pagination: text-button-big
 }
 
 
-/* checkbox */
+/* label */
 
 
-.control { /* input+label */
-  display: flex;
-  align-items: center;
+label:hover { /* лапка на лейбле формы */
+  cursor: pointer;
+}
+
+
+/* control - чекбокс/радио + лэйбл */
+
+
+.control {
   cursor: pointer;
 }
 
@@ -282,11 +361,116 @@ button-pagination: text-button-big
   opacity: 30%;
 }
 
-.control-input { /* сам контрол */
-  width: 20px;
-  height: 20px;
-  margin: 0 16px 0 0;
+
+/* checkbox */
+
+
+.custom-checkbox { /* скрывает нативный чекбокс */
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.label-control { /* контейнер с кастонмым чекбоксом (псевдо элементом) и лейблом */
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* кастомный чекбокс */
+
+.custom-checkbox+.label-control::before { /* default */
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
   background-color: var(--main-primary);
+  background-position: center;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* default */
+
+.custom-checkbox:hover+.label-control::before { /* default - hover */
+  box-shadow: 0 4px 10px 0 var(--icon-tertiary);
+}
+
+.custom-checkbox:focus+.label-control::before { /* default - focus-visible */
+  box-shadow: 0 4px 10px 0 var(--icon-tertiary);
+}
+
+.custom-checkbox:focus-visible+.label-control::before { /* default - focus-visible */
+  box-shadow: 0 4px 10px 0 var(--icon-tertiary);
+  border: 2px solid var(--main-blue);
+}
+
+.custom-checkbox:active+.label-control::before { /* default - active */
+  box-shadow: 0 7px 15px 0 var(--icon-tertiary);
+  border: 2px solid var(--main-blue);
+}
+
+/* checked */
+
+.custom-checkbox:checked+.label-control::before { /* checked */
+  background-image: url(../images/vector/icons/confirm.svg);
+}
+
+
+/* radio */
+
+
+.custom-radio { /* скрывает нативный радио */
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.label-control { /* контейнер с кастонмым чекбоксом (псевдо элементом) и лейблом */
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* кастомный radio */
+
+.custom-radio+.label-control::before { /* default */
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: var(--main-primary);
+  background-position: center;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  outline: none;
+}
+
+/* default */
+
+.custom-radio:hover+.label-control::before { /* default - hover */
+  box-shadow: 0 4px 10px 0 var(--icon-tertiary);
+}
+
+.custom-radio:focus+.label-control::before { /* default - focus-visible */
+  box-shadow: 0 4px 10px 0 var(--icon-tertiary);
+}
+
+.custom-radio:focus-visible+.label-control::before { /* default - focus-visible */
+  box-shadow: 0 4px 10px 0 var(--icon-tertiary);
+  border: 2px solid var(--main-blue);
+}
+
+.custom-radio:active+.label-control::before { /* default - active */
+  box-shadow: 0 7px 15px 0 var(--icon-tertiary);
+  border: 2px solid var(--main-blue);
+}
+
+/* checked */
+
+.custom-radio:checked+.label-control::before { /* checked */
+  background-image: url(../images/vector/icons/circle.svg);
 }
 
 
@@ -299,26 +483,370 @@ filled: text-input
 */
 
 
-.input-field {
-  padding: 12px 20px;
+.field { /* поле, базовые параметры */
+  margin: 0;
+  padding: 9px 15px;
+  color: var(--text-primary);
   background-color: var(--main-gray);
-  border: none;
   border-radius: 4px;
+  border: 3px solid transparent;
 }
 
-.input-field:hover,
-.input-field:focus-visible {
+.field:hover {
   background-color: var(--main-gray-hover);
+  border: 3px solid transparent;
+  cursor: pointer;
 }
 
-.subscribe-email-field {
-  padding: 14px 20px;
+.field:focus {
+  background-color: var(--main-gray-hover);
+  border: 3px solid transparent;
+  outline: none;
+}
+
+.field:focus-visible {
+  background-color: var(--main-gray-hover);
+  border: 3px solid var(--main-blue);
+  outline: none;
+}
+
+.field:disabled {
+  background-color: var(--main-gray);
+  border: 3px solid transparent;
+  opacity: 50%;
+}
+
+.field:disabled:hover {
+  background-color: var(--main-gray);
+  border: 3px solid transparent;
+  opacity: 50%;
+}
+
+.field::placeholder {
+  color: var(--text-secondary);
+}
+
+.input-field-caption { /* input-field + caption */
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.input-field-caption-error { /* текст ошибки под полем */
+  padding: 0 20px;
+  color: var(--text-error);
+}
+
+.input-field-caption-caption { /* текст подписи под полем */
+  padding: 0 20px;
+  color: var(--text-secondary);
+}
+
+.input-field-caption-none { /* без подписи под полем */
+  display: none;
+}
+
+
+/* input field - subscribe */
+
+
+.subscribe-email-field { /* поле email, базовые параметры */
+  margin: 0;
+  padding: 11px 17px;
+  color: var(--text-primary);
+  background-color: var(--main-gray);
+  border-radius: 4px 0 0 4px;
+  border: 3px solid transparent;
+}
+
+.subscribe-email-field:hover {
+  background-color: var(--main-gray-hover);
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+
+.subscribe-email-field:focus {
+  background-color: var(--main-gray-hover);
+  border: 3px solid transparent;
+  outline: none;
+}
+
+.subscribe-email-field:focus-visible {
+  background-color: var(--main-gray-hover);
+  border: 3px solid var(--main-blue);
+  outline: none;
+}
+
+.subscribe-email-field:disabled {
+  background-color: var(--main-gray);
+  opacity: 50%;
+  border: 3px solid transparent;
+}
+
+.subscribe-email-field:disabled:hover {
+  background-color: var(--main-gray);
+  opacity: 50%;
+  border: 3px solid transparent;
+}
+
+.subscribe-email-field::placeholder {
+  color: var(--field-placeholder-primary);
+}
+
+.subscribe-email-field:invalid::after { /* поле с ошибкой */
+  content: 'Текст ошибки';
+  color: var(--text-error);
+}
+
+.subscribe-email-field:focus:invalid::after {
+  content: 'Текст ошибки';
+  color: var(--text-error);
+}
+
+
+/* input-date */
+
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/vector/icons/calendar.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator:hover {
+  cursor: pointer;
+}
+
+
+/* select */
+
+
+.select { /* селект, базовые параметры */
+  width: 292px;
+  height: 48px;
+  margin: 0;
+  padding: 0 15px;
+  color: var(--text-primary);
+  background-color: var(--main-primary);
+  border: 2px solid var(--main-disabled);
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none; /* Safari и Chrome */
+  -moz-appearance: none; /* Mozilla */
+  -ms-appearance: none; /* IE */
+  background-image: url(../images/vector/icons//discloser.svg);
+  background-position: center right 12px;
+  background-repeat: no-repeat;
+
+}
+
+.select:hover {
+  border: 2px solid var(--main-blue);
+}
+
+.select:focus {
+  border: 2px solid var(--main-disabled);
+}
+
+.select:focus-visible {
+  border: 2px solid var(--main-disabled);
+}
+
+.select:focus-visible:hover {
+  border: 2px solid var(--main-blue);
+}
+
+.select:active {
+  border: 2px solid var(--main-disabled);
+}
+
+
+/* input-field-range (input number, работающие совместно с range ) */
+
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input-field-range input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+
+/* input-range */
+
+
+input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track { /* базовая линия */
+  height: 4px;
+  background-color: var(--range);
+}
+
+input[type=range]::-moz-range-track { /* заполненная линия */
+  height: 4px;
+  background-color: red;
+}
+
+input[type=range]::-webkit-slider-thumb { /* ручка */
+  width:20px;
+  height: 20px;
+  margin-top: -8px;
+  background:  var(--main-primary);
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+input[type=range]::-moz-range-thumb {
+  width:20px;
+  height: 20px;
+  margin-top: -8px;
+  background:  cyan;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* input-field-counter (input number, управляемый кнопками плюс и минус) */
+
+
+.input-field-counter { /* числовое поле + кнопки плю и минус */
+  display: flex;
+  align-items: center;
+
+}
+
+.input-field-number { /* числовое поле ввода */
+  border-radius: 0;
+  width: 100%;
+  padding: 9px 0;
+  text-align: center;
+}
+
+.input-number-change-button { /* кнопки плюс и минус */
+  display: inline-block;
+  height: 48px;
+  padding: 9px;
   background-color: var(--main-gray);
   border: none;
+  outline: none;
+}
+
+.input-number-change-button:hover {
+  cursor: pointer;
+}
+
+.input-number-change-button .icon { /* иконка кнопки */
+  display: flex;
+  width: 22px;
+  height: 22px;
+  fill: var(--icon-primary-active);
+  border: 2px solid transparent;
+}
+
+.input-number-change-button:hover .icon {
+  fill: var(--icon-primary);
+}
+
+.input-number-change-button:focus-visible .icon {
+  fill: var(--icon-primary);
+  border: 2px solid var(--focus);
+}
+
+.input-number-change-button:disabled .icon {
+  opacity: 10%;
+}
+
+.input-number-change-button:first-of-type { /* скругляет углы первой кнопке */
   border-radius: 4px 0 0 4px;
 }
 
-.subscribe-email-field:hover,
-.subscribe-email-field:focus-visible {
-  background-color: var(--main-gray-hover);
+.input-number-change-button:last-of-type { /* скругляет углы второй кнопке */
+  border-radius: 0 4px 4px 0;
+}
+
+
+
+
+
+
+
+
+/* tooltip */
+
+
+.tooltip { /* контейнер со скрытым тултипом */
+  position: relative;
+  display: inline-flex;
+  margin-left: 10px;
+  margin-right: 28px;
+}
+
+.tooltip-toggle { /* кнопка, раскрывающая тултип */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-blue);
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.tooltip-toggle:hover,
+.tooltip-toggle:focus {
+  background-color: var(--main-blue-hover);
+  cursor: pointer;
+}
+
+.tooltip-icon { /* иконка в кнопке тултипа */
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-primary-invert);
+}
+
+.tooltip-description { /* подсказка */
+  position: absolute;
+  width: 256px;
+  padding: 18px 18px 24px 22px;
+  margin-top: 15px;
+  color: var(--text-primary-invert);
+  background-color: var(--main-dark);
+  border-radius: 10px;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/*
+.tooltip-toggle:hover .tooltip-description,
+.tooltip-toggle:focus .tooltip-description {
+  display: block;
+}
+*/
+
+.tooltip-description::before {
+  content: '';
+  background-image: url(../images/vector/icons/tooltip-triangle.svg);
+  width: 20px;
+  height: 9px;
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
 }

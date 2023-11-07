@@ -12,10 +12,10 @@
   <body>
 
 
-    <!-- добавить класс modal-container-close, чтобы скрыть окно  -->
+    <!-- добавить класс modal-container-active, чтобы модальное окно отображалось -->
 
 
-    <div class="modal-container">
+    <div class="modal-container modal-container-active">
       <div class="modal">
         <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть окно</span>
@@ -31,26 +31,32 @@
             <!-- сетка полей -->
             <div class="hotel-search-form-fields">
               <!-- поле 1 -->
-              <label class="heading-4" for="hotel-search-form-check-in-date">
-                Дата заезда:
-              </label>
+              <div class="form-label">
+                <label class="heading-4" for="hotel-search-form-check-in-date">
+                  Дата Заезда:
+                </label>
+              </div>
               <div class="input-field-caption">
                 <input class="field input-field text-input fill-field" id="hotel-search-form-check-in-date" type="date" name="check-in-date" value="2020-04-17">
                 <!-- класс input-field-caption-none для span, чтобы не было подписи -->
                 <span class="input-field-caption-error text-small">Мы не можем отправить вас в прошлое.</span>
               </div>
-                <!-- поле 2 -->
-              <label class="heading-4" for="hotel-search-form-check-out-date">
-                Дата выезда:
-              </label>
+              <!-- поле 2 -->
+              <div class="form-label">
+                <label class="heading-4" for="hotel-search-form-check-out-date">
+                Дата Выезда:
+                </label>
+              </div>
               <div class="input-field-caption">
                 <input class="field input-field text-input fill-field" id="hotel-search-form-check-out-date" type="date" name="check-out-date" value="2023-09-01">
                 <span class="input-field-caption-caption text-small">На эти даты есть свободные номера. Пока есть.</span>
               </div>
               <!-- поле 3 -->
-              <label class="heading-4" for="hotel-search-form-adult-counter-field">
-                Взрослые:
-              </label>
+              <div class="form-label">
+                <label class="heading-4" for="hotel-search-form-adult-counter-field">
+                  Взрослые:
+                </label>
+              </div>
               <div class="input-field-counter">
                 <button class="input-number-change-button" type="button">
                   <span class="visually-hidden">Уменьшить</span>
@@ -67,18 +73,19 @@
                 </button>
               </div>
               <!-- поле 4 -->
-              <label class="label-icon heading-4 grid-cell-right-align" for="hotel-search-form-children-counter-field">
-                Дети:
-                <span class="tooltip">
+              <div class="form-label label-icon grid-cell-right-align">
+                <label class="heading-4" for="hotel-search-form-children-counter-field">
+                  Дети:
+                </label>
+                <div class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children-counter">
                     <svg class="tooltip-icon" width="20" height="20">
                       <use xlink:href="images/sprite.svg#info"></use>
                     </svg>
                   </button>
-                  <span class="tooltip-description text-tooltip" role="tooltip" id="tooltip-label-children-counter">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                </span>
-              </label>
-
+                  <div class="tooltip-description text-tooltip" role="tooltip" id="tooltip-label-children-counter">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+                </div>
+              </div>
               <div class="input-field-counter">
                 <button class="input-number-change-button" type="button">
                   <span class="visually-hidden">Увеличить</span>

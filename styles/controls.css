@@ -59,7 +59,7 @@ button-pagination: text-button-big
 }
 
 .button-blue:disabled {
-  opacity: 50%;
+  background-color: var(--buttons-disabled);
 }
 
 .button-brown { /* стиль коричневый */
@@ -87,7 +87,7 @@ button-pagination: text-button-big
 }
 
 .button-brown:disabled {
-  opacity: 50%;
+  background-color: var(--buttons-disabled);
 }
 
 .button-green { /* стиль зеленый */
@@ -112,7 +112,7 @@ button-pagination: text-button-big
 }
 
 .button-green:disabled {
-  opacity: 50%;
+  background-color: var(--buttons-disabled);
 }
 
 .button-transparent-invert { /* стиль прозрачный */
@@ -137,7 +137,7 @@ button-pagination: text-button-big
 }
 
 .button-transparent-invert:disabled {
-  opacity: 50%;
+  opacity: 10%;
 }
 
 
@@ -228,6 +228,10 @@ button-pagination: text-button-big
 .button-pagination-blue:focus-visible {
   background-color: var(--main-blue-hover);
   border: 1px solid var(--main-blue);
+}
+
+.button-pagination:disabled {
+  opacity: 50%;
 }
 
 
@@ -648,7 +652,7 @@ input[type=date]::-webkit-calendar-picker-indicator:hover {
   margin: 0;
   padding: 0 15px;
   color: var(--text-primary);
-  background-image: url(../images/vector/icons//discloser.svg);
+  background-image: url(../images/vector/icons/discloser.svg);
   background-position: center right 12px;
   background-repeat: no-repeat;
   background-color: var(--main-primary);
@@ -683,7 +687,8 @@ input[type=date]::-webkit-calendar-picker-indicator:hover {
 }
 
 .select:disabled {
-  opacity: 50%;
+  color: var(--field-placeholder-secondary);
+  border: 2px solid var(--field-placeholder-secondary);
 }
 
 

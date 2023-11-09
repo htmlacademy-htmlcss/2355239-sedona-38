@@ -58,7 +58,6 @@
   font-size: 20px;
   line-height: 24px; /* 120% */
   font-weight: 700;
-  text-transform: capitalize;
 }
 
 
@@ -104,8 +103,16 @@
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 18px;
-  line-height: 23px; /* 127.778% */
+  line-height: 24px; /* 127.778% */
   font-weight: 400;
+}
+
+.text-input {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px; /* 133.333% */
+  font-weight: 700;
 }
 
 
@@ -145,12 +152,20 @@
   font-weight: 400;
 }
 
-.text-input {
+.text-input-light {
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 24px; /* 133.333% */
   font-weight: 400;
+}
+
+.text-tooltip {
+font-family: "PT Sans", "Arial", sans-serif;
+font-style: normal;
+font-size: 16px;
+line-height: 20px; /* 125% */
+font-weight: 400;
 }
 
 .text-micro {

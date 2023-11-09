@@ -21,6 +21,8 @@
 
   --main-disabled: rgb(229 229 229);
 
+  --main-dark: rgb(51 51 51);
+
   /* text */
 
   --text-primary:rgb(0 0 0);
@@ -41,22 +43,25 @@
   --icon-primary-hover:rgb(117 97 87);
   --icon-primary-active:rgb(117 97 87 / 0.3);
   --icon-primary-focus:rgb(117 97 87);
+  --icon-tertiary: rgb(0 0 0 / 0.3);
 
   --icon-secondary:rgb(131 179 211);
   --icon-secondary-hover:rgb(104 162 202);
   --icon-secondary-active:rgb(104 162 202);
   --icon-secondary-focus:rgb(104 162 202);
 
-  --icon-primary-invert: rgb(229 229 229);
+  --icon-primary-invert: rgb(255 255 255);
 
-  /* forms */
+  /* controls */
 
-  --forms-input:rgb(63 94 114);
-  --forms-elements-1:rgb(229 229 229);
-  --forms-elements-2:rgb(242 242 242);
+  --field-placeholder-primary: rgb(0 0 0 / 0.6);
+  --field-placeholder-secondary: rgb(0 0 0 / 0.3);
+  --buttons-disabled:rgb(229 229 229);
 
   /* extra */
 
   --focus: rgb(131 179 211);
   --backdrop: rgb(242 242 242 / 0.8);
+  --range: rgb(255 255 255 / 0.3);
+  --modal-shadow: rgb(0 0 0 / 0.15);
 }

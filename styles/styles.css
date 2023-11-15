@@ -99,14 +99,9 @@ img {
 /* page-header */
 
 
-.page-header {
-  height: 64px;
-}
-
 .navigation {
   display: flex;
   justify-content: space-between;
-  height: 64px;
 }
 
 .navigation-primary { /* navigation-primary */
@@ -125,6 +120,7 @@ img {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-link:link {
@@ -169,6 +165,8 @@ img {
 .navigation-secondary { /* navigation-secondary */
   display: flex;
   gap: 20px;
+  height: 64px;
+  min-width: fit-content;
 }
 
 .navigation-icons {
@@ -221,6 +219,7 @@ img {
 .navigation-controls {
   display: flex;
   align-items: center;
+  gap: 8px;
   height: 64px;
 }
 

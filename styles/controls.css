@@ -19,16 +19,19 @@ button-pagination: text-button-big
 .button-600 { /* размер большой */
   padding: 9px 47px;
   border-radius: 10px;
+  min-width: fit-content;
 }
 
 .button-500 {  /* размер средний */
   padding: 5px 47px;
   border-radius: 4px;
+  min-width: fit-content;
 }
 
 .button-400 {  /* размер маленький */
   padding: 5px 33px;
   border-radius: 4px;
+  min-width: fit-content;
 }
 
 .button:active { /* текст светлеет при нажатии */

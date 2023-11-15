@@ -29,7 +29,7 @@ button-pagination: text-button-big
 }
 
 .button-400 {  /* размер маленький */
-  padding: 5px 33px;
+  padding: 5px 32px;
   border-radius: 4px;
   min-width: fit-content;
 }
@@ -149,7 +149,7 @@ button-pagination: text-button-big
 
 .modal-close-button { /* кнопка закрытия модального окна */
   position: absolute;
-  top: 64px;
+  top: 65px;
   right: 52px;
   display: flex;
   align-items: center;
@@ -400,8 +400,8 @@ label:hover { /* лапка на лейбле формы */
 .custom-checkbox + .label-control::before {
   content: "";
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   background-color: var(--main-primary);
   background-position: center;
   border: 2px solid transparent;
@@ -464,8 +464,8 @@ label:hover { /* лапка на лейбле формы */
 .custom-radio + .label-control::before {
   content: "";
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   background-color: var(--main-primary);
   background-position: center;
   border: 2px solid transparent;
@@ -848,7 +848,7 @@ input[type='number'] {
   justify-content: space-between;
   height: 4px;
   margin-left: 0;
-  margin-right: 20%;
+  margin-right: 21%;
   background-color: var(--main-primary);
 }
 

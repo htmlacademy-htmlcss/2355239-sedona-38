@@ -5,9 +5,6 @@
     <title>Гостиницы Седоны</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/controls.css">
-    <link rel="stylesheet" href="styles/colors.css">
-    <link rel="stylesheet" href="styles/fonts.css">
   </head>
   <body>
     <div class="page-content-container">
@@ -27,7 +24,7 @@
                 <a class="navigation-link default" href="#">О Седоне</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link active" href="catalog.html">Гостиницы</a>
+                <a class="navigation-link active" href="" aria-current="page">Гостиницы</a>
               </li>
             </ul>
           </div>
@@ -72,13 +69,13 @@
                 <li class="breadcrumbs-item">
                   <a class="breadcrumbs-link" href="index.html">
                     <span class="visually-hidden">Домашняя страница</span>
-                    <svg class="icon breadcrumbs-icon" width="20" height="20">
+                    <svg class="icon" width="20" height="20">
                       <use xlink:href="images/sprite.svg#home-small"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link" href="#"><span class="breadcrumbs-page-name">Гостиницы</span></a>
+                  <a class="breadcrumbs-link" href="" aria-current="page"><span class="breadcrumbs-page-name">Гостиницы</span></a>
                 </li>
               </ul>
             </nav>
@@ -95,13 +92,13 @@
                 <ul class="filter-form-list text-checkbox">
                   <li class="filter-form-item">
                     <label class="control">
-                      <input class="custom-checkbox" type="checkbox" name="swimming-pool">
+                      <input class="custom-checkbox" type="checkbox" name="swimming-pool" checked>
                       <span class="label-control">Бассейн</span>
                     </label>
                   </li>
                   <li class="filter-form-item">
                     <label class="control">
-                      <input class="custom-checkbox" type="checkbox" name="parking">
+                      <input class="custom-checkbox" type="checkbox" name="parking" checked>
                       <span class="label-control">Парковка</span>
                     </label>
                   </li>
@@ -180,7 +177,7 @@
               </select>
               <ul class="catalog-view-list">
                 <li class="catalog-view-item">
-                  <a class="tab-current" href="#">
+                  <a class="tab-current" href="" aria-current="page">
                     <svg class="icon" width="20" height="20">
                       <use xlink:href="images/sprite.svg#page-view-grid"></use>
                     </svg>
@@ -459,6 +456,7 @@
         </ul>
         <a class="footer-phone text-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a class="footer-logo" href="https://htmlacademy.ru/" target="_blank">
+          <span class="visually-hidden">Ссылка на сайт html academy</span>
           <svg class="icon htmlacademy-logo" width="115" height="33">
             <use xlink:href="images/sprite.svg#htmlacademy-logo"></use>
           </svg>

@@ -1020,6 +1020,7 @@ body {
 
 .footer-phone:link { /* телефон */
   min-width: 332px;
+  padding-left: 2px;
   color: var(--text-primary);
   text-decoration: none;
   outline: none;
